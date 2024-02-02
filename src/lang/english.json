@@ -1,0 +1,65 @@
+[
+  {
+    "header":{
+      "home": "Home",
+      "courses": "Courses",
+      "news": "News",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "main":{
+        "hero": {
+          "hero-name": "Master the in-demand IT profession and start earning",
+          "button": "Sign up for a course"
+        },
+        "advantages": {
+          "advantages-heading": "Our advantages",
+          "first": {
+            "icon": "../assets/icons/tutors.png",
+            "name": "Experienced tutors",
+            "description": "Learn the basics of programming, then choose your own path."
+          },
+          "second": {
+            "icon": "../assets/icons/method.png",
+            "name": "Best Teaching Method",
+            "description": "Learn the basics of programming, then choose your own path."
+          },
+          "third": {
+            "icon": "../assets/icons/intensive.png",
+            "name": "Intensive course",
+            "description": "6 classes per week, 24/7 support."
+          }
+        },
+        "achievements": {
+          "achievements-heading": "Our achievements",
+          "first": {
+            "head": "6 years",
+            "body": "Of teaching experience"
+          },
+          "second": {
+            "head": "280+",
+            "body": "The number of graduates"
+          },
+          "third": {
+            "head": "from 16 years",
+            "body": "The age of our students"
+          },
+          "fourth": {
+            "head": "78%",
+            "body": "Employed in IT companies"
+          },
+          "fifth": {
+            "head": "98%",
+            "body": "Willing to recommend us"
+          }
+        },
+        "feedbacks": {
+          "feedbacks-heading": "Our students' Testimonials",
+          "student1": {
+            "image": "../src/assets/images/student1.jpg",
+            "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
+          }
+        }
+    }
+  }
+]

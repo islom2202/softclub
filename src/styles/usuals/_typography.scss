@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+$typography:(
+  h2: clamp(2.4rem, 5vw, 4rem),
+  h3: 2.4rem,
+  h4: 1.6rem,
+  button: 1.6rem,
+  a: clamp(1.6rem, 1.5vw, 1.8rem),
+  p: 1.8rem,
+  small: 1.2rem,
+  option: clamp(1.6rem, 1.5vw, 1.8rem),
+  select: clamp(1.6rem, 1.5vw, 1.8rem)
+);
+
+@each $tag, $size in $typography{
+  #{$tag}{
+    font-size: $size;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
