@@ -3,5 +3,13 @@
 @forward "./usuals/boilerplates";
 @forward "./usuals/breakpoints";
 @forward "./usuals/mixins";
+@forward "./usuals/measures";
+
 // layouts
 @forward "./layouts/header";
+@forward "./layouts/main";
+// components
+@forward "./components/hero";
+@forward "./components//buttons";
+// themes
+@forward "./usuals/themes";

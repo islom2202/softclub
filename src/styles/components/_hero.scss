@@ -1,0 +1,45 @@
+@use "../usuals/colors" as *;
+@use "../usuals/breakpoints" as *;
+@use "../usuals/mixins" as *;
+@use "../usuals/measures" as *;
+// mobile
+.hero{
+  @include flex();
+  flex-direction: column-reverse;
+  padding-inline: $mobile-inline;
+  padding-block: 5rem;
+  height: map-get($hero-height, mobile);
+  &__content{
+    @include flex();
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  &__img{
+    width: 80%;
+    max-width: 500px;
+  }
+}
+// tablet
+@include responsive($tablet){
+  .hero{
+    flex-direction: row;
+    height: map-get($hero-height, tablet-desktop);
+    &__content{
+      @include flex(start);
+      text-align: start;
+      flex: 1;
+    }
+    &__img{
+      flex: 1.2;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+// desktop
+@include responsive($desktop){
+  .hero{
+    padding-inline: $desktop-inline;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../usuals/colors" as *;
+
+//---------- light theme
+.app{
+  // header
+  .header{
+    background-color: $light-hero;
+    a,select,button,.material-symbols-outlined{
+      color: $nav;
+      background-color: transparent;
+    }
+    .themes--active{
+      background-color: rgba(186, 186, 186, 0.256);
+    }
+  }
+  .hero{
+      background-color: $light-hero;
+  }
+}
+
+
+//---------- dark theme
+.dark{
+  // header
+  .header{
+    background-color: $dark-hero;
+    a,select,button,.material-symbols-outlined{
+      color: $nav-dark;
+    }
+    .active{
+        color: $active-nav-dark;
+    }
+    option{
+      background-color: $dark-hero;
+    }
+  }
+  .hero{
+    background-color: $dark-hero;
+  }
+}

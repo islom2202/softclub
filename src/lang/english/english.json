@@ -1,13 +1,12 @@
-[
-  {
+{
     "header":{
       "home": "Home",
       "courses": "Courses",
       "news": "News",
       "about": "About Us",
-      "contact": "Contact"
+      "contacts": "Contact"
     },
-    "main":{
+    "home": {
         "hero": {
           "hero-name": "Master the in-demand IT profession and start earning",
           "button": "Sign up for a course"
@@ -41,16 +40,12 @@
             "body": "The number of graduates"
           },
           "third": {
-            "head": "from 16 years",
-            "body": "The age of our students"
-          },
-          "fourth": {
             "head": "78%",
             "body": "Employed in IT companies"
           },
-          "fifth": {
+          "fourth": {
             "head": "98%",
-            "body": "Willing to recommend us"
+            "body": "Ready to recommend us"
           }
         },
         "feedbacks": {
@@ -61,5 +56,4 @@
           }
         }
     }
-  }
-]
+}

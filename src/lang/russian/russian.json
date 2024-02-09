@@ -1,0 +1,56 @@
+{
+  "header": {
+    "home": "Главная",
+    "courses": "Курсы",
+    "news": "Новости",
+    "about": "О Нас",
+    "contacts": "Контакты"
+  },
+  "home": {
+    "hero": {
+      "hero-name": "Освой востребованную IT-профессию и начни зарабатывать",
+      "button": "Записаться на курсы"
+    },
+    "advantages": {
+      "advantages-heading": "Наши преимущества",
+      "first": {
+        "name": "Опытные репетиторы",
+        "description": "Наши инструкторы имеют опыт работы в реальных проектах"
+      },
+      "second": {
+        "name": "Лучший метод преподавания",
+        "description": "Изучите основы программирования, а затем выберите свой собственный путь."
+      },
+      "third": {
+        "name": "Интенсивный курс",
+        "description": "6 дневных занятий в неделю поддержка 24/7."
+      }
+    },
+    "achievements": {
+      "achievements-heading": "Наши успехи",
+      "first": {
+        "head": "6 лет",
+        "body": "Опыта преподавания"
+      },
+      "second": {
+        "head": "280+",
+        "body": "Количество выпускников"
+      },
+      "third": {
+        "head": "78%",
+        "body": "Трудоустроились в IT- компаниях"
+      },
+      "fourth": {
+        "head": "98%",
+        "body": "Готовы нас рекомендовать"
+      }
+    },
+    "feedbacks": {
+      "feedbacks-heading": "Our students' Testimonials",
+      "student1": {
+        "image": "../src/assets/images/student1.jpg",
+        "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
+      }
+    }
+  }
+}

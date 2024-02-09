@@ -1,16 +1,24 @@
 @use "../usuals/breakpoints" as *;
 @use "../usuals/mixins" as *;
 @use "../usuals/colors" as *;
-
+@use "../usuals/measures" as *;
 // mobile
 .header{
   padding-inline: $mobile-inline;
-  padding-block: 1rem;
+  min-height: map-get($header-height, mobile);
   position: sticky;
+  padding-block: 1.2rem;
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  animation: scroll-down forwards;
+  animation-timeline: scroll();
+  animation-range-start: map-get($header-height, mobile); // I added it because background-transparency causing background white-like effect, just delete to witness it yourself
+  animation-range-end: map-get($header-height, mobile);
+  @keyframes scroll-down {
+    to{background-color: transparent}
+  }
   &__aside{
     @include flex(center, space-between);
     &__logo{
@@ -26,13 +34,10 @@
     }
   }
   &__nav{
-    @include flex();
+    @include flex(start);
     flex-direction: column;
     gap: 1rem;
     padding-block: 2rem;
-    a{
-      color: $nav;
-    }
     .active{
       font-weight: 600;
       text-decoration: underline $blue 0.4rem;
@@ -49,11 +54,7 @@
     button{
       @include flex(center, center);
       height: 3rem;
-      background: none;
       border: .1rem dashed;
-      img{
-        block-size: 1.4rem;
-      }
     }
     .themes--active{
       background-color: rgba(128, 128, 128, 0.202);
@@ -71,6 +72,8 @@
 @include responsive($tablet){
   .header{
     @include flex(center, space-between);
+    height: map-get($header-height, tablet-desktop);
+    animation-range-end: map-get($header-height, tablet-desktop);
     &__aside{
       &__menu{
         display: none;

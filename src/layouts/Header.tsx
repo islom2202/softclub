@@ -1,58 +1,61 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-export const Header = ({logo, menu, cancel, moon, sun}:{logo:string, menu:string, cancel:string, moon:string, sun:string}) => {
+// i18next hook
+import { useTranslation } from "react-i18next";
+// header icons
+export const Header = ({logo,  moon, sun, children}:{logo:string, menu:any, cancel:string, moon:string, sun:string, children:string}) => {
   //states
-  const [burger, setburger] = useState(menu)
+  const [burger, setburger] = useState('menu')
   const [hide, sethide] = useState("header--hide")
-  const [theme, settheme] = useState("light")
+  const [theme, settheme] = useState(true)
   // handle menu
   const handleMenu = () => {
-    setburger(burger == menu ? cancel : menu)
-    sethide(burger == cancel ? "header--hide": "")
+    setburger(burger == 'menu' ? 'cancel' : 'menu')
+    sethide(burger == 'cancel' ? "header--hide": "")
   }
   // handle theme
-  const handleTheme = (value:string) => {
+  const handleTheme = (value:boolean) => {
+    let app = document.querySelector(".app")
     settheme(value)
+    !value ? app?.classList.add('dark'): app?.classList.remove('dark') 
   };
-  
+  // i18n languages
+  const {t} = useTranslation()
+
   return (
-    <header className="header">
+    <header className="header header--light">
       <aside className="header__aside">
         <img src={logo} alt="logo" className="header__aside__logo" />
-        <img
-          src={burger}
-          alt={burger}
-          className="header__aside__menu"
+        <span
+          className="material-symbols-outlined header__aside__menu"
           onClick={() => handleMenu()}
-          tabIndex={0}
-        />
+        >
+          {burger == "menu" ? "menu" : "close"}
+        </span>
       </aside>
       <section className="header__right-desktop">
         <nav className={`${hide} header__nav`}>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/courses">Courses</NavLink>
-          <NavLink to="/news">News</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="/contacts">Contacts</NavLink>
+          <NavLink to="/">{t("header.home")}</NavLink>
+          <NavLink to="/courses">{t("header.courses")}</NavLink>
+          <NavLink to="/news">{t("header.news")}</NavLink>
+          <NavLink to="/about">{t("header.about")}</NavLink>
+          <NavLink to="/contacts">{t("header.contacts")}</NavLink>
         </nav>
         <div className={`${hide} header__switchers`}>
-          <select className="header__switchers__languages">
-            <option value="english">EN</option>
-            <option value="russian">RU</option>
-            <option value="tajik">TJ</option>
-          </select>
+          {/*Language changing*/}
+          {children}
           <div className="header__switchers__themes">
             <button
-              className={theme == "light" ? "themes--active" : ""}
-              onClick={() => handleTheme("light")}
+              className={theme ? "themes--active" : ""}
+              onClick={() => handleTheme(true)}
             >
-              <img src={sun} alt="sun-icon" />
+              <span class="material-symbols-sharp">sunny</span>
             </button>
             <button
-              className={theme == "dark" ? "themes--active" : ""}
-              onClick={() => handleTheme("dark")}
+              className={!theme ? "themes--active" : ""}
+              onClick={() => handleTheme(false)}
             >
-              <img src={moon} alt="moon-icon" />
+              <span className="material-symbols-sharp">dark_mode</span>
             </button>
           </div>
         </div>

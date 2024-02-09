@@ -1,9 +1,8 @@
 // header icons
 import logo from "./assets/icons/logo.svg";
-import menu from "./assets/icons/menu.svg";
-import cancel from "./assets/icons/cancel.svg";
 import moon from "./assets/icons/moon.svg";
 import sun from "./assets/icons/sun.svg";
+
 // Routes 
 import { Route, Routes } from "react-router-dom"
 // Pages
@@ -15,10 +14,32 @@ import { Contacts } from "./pages/Contacts"
 import { Header } from "./layouts/Header"
 import { Footer } from "./layouts/Footer"
 import { NoMatch } from "./pages/NoMatch"
+// i18next
+import { useTranslation } from "react-i18next";
+// Hooks
+import { useState } from "react";
 function App() {
+  //states
+  const [lang, setlang] = useState("english")
+  // handle languages
+  const { i18n } = useTranslation()
+  const changeLang = (language: string) => {
+    i18n.changeLanguage(language)
+    setlang(language)
+  }
   return (
     <div className="app">
-      <Header logo={logo} menu={menu} cancel={cancel} sun={sun} moon={moon}/>
+      <Header logo={logo} sun={sun} moon={moon}>
+        <select
+          className="header__switchers__languages"
+          value={lang}
+          onChange={(e) => changeLang(e.target.value)}
+        >
+          <option value="english">EN</option>
+          <option value="russian">RU</option>
+          <option value="tajik">TJ</option>
+        </select>
+      </Header>
       <main>
         <Routes>
           <Route index Component={Home} />

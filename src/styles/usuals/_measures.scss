@@ -1,0 +1,9 @@
+@use "./breakpoints" as *;
+$header-height:(
+  mobile: 6.8rem,
+  tablet-desktop: 7.2rem
+);
+$hero-height:(
+  mobile: calc(100vh - map-get($header-height, mobile)),
+  tablet-desktop: calc(100vh - map-get($header-height, tablet-desktop))
+)

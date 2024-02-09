@@ -2,7 +2,7 @@ $mobile: 375px;
 $tablet: 768px;
 $desktop: 1450px;
 $mobile-inline: 5%;
-$desktop-inline: 12%;
+$desktop-inline: 13%;
 @mixin responsive ($breakpoint){
   @media (min-width: $breakpoint) {
     @content;

@@ -1,0 +1,56 @@
+{
+  "header": {
+    "home": "Асосӣ",
+    "courses": "Курсҳо",
+    "news": "Хабарҳо",
+    "about": "Дар Бораи Мо",
+    "contacts": "Тамос"
+  },
+  "home": {
+    "hero": {
+      "hero-name": "Касби серталаби IT-ро омӯхта, ба кор шурӯъ кунед",
+      "button": "Ба курсҳо обуна шавед"
+    },
+    "advantages": {
+      "advantages-heading": "Бартарияти мо",
+      "first": {
+        "name": "Омӯзгорони ботаҷриба",
+        "description": "Омӯзгорони мо дар сохтани лоиҳаҳои воқеӣ таҷриба доранд."
+      },
+      "second": {
+        "name": "Беҳтарин усyли таълим",
+        "description": "Асосҳои барномасозиро омухта, баъдан роҳи худро интихоб кунед."
+      },
+      "third": {
+        "name": "Курси босуръат",
+        "description": "Ҳафтаина 6 рӯзи дарсӣ ва дастгирии 24/7."
+      }
+    },
+    "achievements": {
+      "achievements-heading": "Дастовардҳои мо",
+      "first": {
+        "head": "6 сол",
+        "body": "Таҷрибаи омӯзгорӣ"
+      },
+      "second": {
+        "head": "280+",
+        "body": "Миқдори хатмкунандагон"
+      },
+      "third": {
+        "head": "78%",
+        "body": "Дар ширкатҳои IT кор мекунад"
+      },
+      "fourth": {
+        "head": "98%",
+        "body": "Омодаанд моро тавсия диҳад"
+      }
+    },
+    "feedbacks": {
+      "feedbacks-heading": "Our students' Testimonials",
+      "student1": {
+        "image": "../src/assets/images/student1.jpg",
+        "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
+      }
+    }
+  }
+}
