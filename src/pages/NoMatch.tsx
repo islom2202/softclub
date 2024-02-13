@@ -1,5 +1,7 @@
 export const NoMatch = () => {
   return (
-    <div><h2>404 Not Found</h2></div>
+    <div className="nomatch">
+      <h3>404, Page Not Found</h3>
+    </div>
   )
 }

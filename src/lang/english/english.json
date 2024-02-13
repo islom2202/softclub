@@ -8,7 +8,7 @@
     },
     "home": {
         "hero": {
-          "hero-name": "Master the in-demand IT profession and start earning",
+          "name": "Master the in-demand IT profession and start earning",
           "button": "Sign up for a course"
         },
         "advantages": {
@@ -55,5 +55,30 @@
             "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
           }
         }
+    },
+    "courses": {
+      "hero":{
+        "route-name": "Home > Academy courses",
+        "name": "Academy courses",
+        "description": "We guarantee you high quality lessons and the best instructors",
+        "button":"Sign up for a course"
+      }
+    },
+    "news": {
+      "hero": {
+        "route-name": "Home > Academy news",
+        "name": "Academy news"
+      }
+    },
+    "about":{
+      "hero":{
+        "name": "Softclub Academy"
+      }
+    },
+    "contacts":{
+      "hero": {
+        "route-name": "Home > Contacts",
+        "name": "Contacts"
+      }
     }
 }

@@ -10,9 +10,10 @@
       background-color: transparent;
     }
     .themes--active{
-      background-color: rgba(186, 186, 186, 0.256);
+      background-color: rgba(186, 186, 186, 0.549);
     }
   }
+  // hero
   .hero{
       background-color: $light-hero;
   }
@@ -24,6 +25,9 @@
   // header
   .header{
     background-color: $dark-hero;
+    &__aside__logo{
+      filter: brightness(2)
+    }
     a,select,button,.material-symbols-outlined{
       color: $nav-dark;
     }
@@ -34,7 +38,9 @@
       background-color: $dark-hero;
     }
   }
+  // hero
   .hero{
     background-color: $dark-hero;
+    color: $light-hero;
   }
 }

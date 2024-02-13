@@ -8,7 +8,7 @@
   },
   "home": {
     "hero": {
-      "hero-name": "Касби серталаби IT-ро омӯхта, ба кор шурӯъ кунед",
+      "name": "Касби серталаби IT-ро омӯхта, ба кор шурӯъ кунед",
       "button": "Ба курсҳо обуна шавед"
     },
     "advantages": {
@@ -51,6 +51,31 @@
         "image": "../src/assets/images/student1.jpg",
         "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
       }
+    }
+  },
+  "courses": {
+    "hero": {
+      "route-name": "Асосӣ > Курсҳои академия",
+      "name": "Курсҳои академия",
+      "description": "Мо ба шумо дарсҳои баландсифат ва беҳтарин омӯзгоронро кафолат медиҳем",
+      "button": "Ба курсҳо сабт шудан"
+    }
+  },
+  "news": {
+    "hero": {
+      "route-name": "Асосӣ > Хабарҳои академия",
+      "name": "Хабарҳои академия"
+    }
+  },
+  "about": {
+    "hero": {
+      "name": "Академияи Softclub"
+    }
+  },
+  "contacts": {
+    "hero": {
+      "route-name": "Асосӣ > Тамос",
+      "name": "Тамос"
     }
   }
 }

@@ -8,7 +8,7 @@
   },
   "home": {
     "hero": {
-      "hero-name": "Освой востребованную IT-профессию и начни зарабатывать",
+      "name": "Освой востребованную IT-профессию и начни зарабатывать",
       "button": "Записаться на курсы"
     },
     "advantages": {
@@ -51,6 +51,31 @@
         "image": "../src/assets/images/student1.jpg",
         "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
       }
+    }
+  },
+  "courses": {
+    "hero": {
+      "route-name": "Главная > Курсы академии",
+      "name": "Курсы академии",
+      "description": "Мы гарантируем вам высокое качество уроков и лучших инструкторов",
+      "button": "Записаться на курсы"
+    }
+  },
+  "news": {
+    "hero": {
+      "route-name": "Главная  >  Новости",
+      "name": "Новости академии"
+    }
+  },
+  "about": {
+    "hero": {
+      "name": "Академия Softclub"
+    }
+  },
+  "contacts": {
+    "hero": {
+      "route-name": "Главная > Контакты",
+      "name": "Контакты"
     }
   }
 }

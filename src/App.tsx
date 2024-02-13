@@ -1,7 +1,6 @@
 // header icons
 import logo from "./assets/icons/logo.svg";
-import moon from "./assets/icons/moon.svg";
-import sun from "./assets/icons/sun.svg";
+
 
 // Routes 
 import { Route, Routes } from "react-router-dom"
@@ -29,7 +28,7 @@ function App() {
   }
   return (
     <div className="app">
-      <Header logo={logo} sun={sun} moon={moon}>
+      <Header logo={logo} >
         <select
           className="header__switchers__languages"
           value={lang}
@@ -50,7 +49,7 @@ function App() {
           <Route path="*" Component={NoMatch} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

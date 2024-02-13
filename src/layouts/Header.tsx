@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 // i18next hook
 import { useTranslation } from "react-i18next";
 // header icons
-export const Header = ({logo,  moon, sun, children}:{logo:string, menu:any, cancel:string, moon:string, sun:string, children:string}) => {
+export const Header = ({logo, children}:{logo:string, children:string}) => {
   //states
   const [burger, setburger] = useState('menu')
   const [hide, sethide] = useState("header--hide")
@@ -44,12 +44,13 @@ export const Header = ({logo,  moon, sun, children}:{logo:string, menu:any, canc
         <div className={`${hide} header__switchers`}>
           {/*Language changing*/}
           {children}
+          {/*Themes*/}
           <div className="header__switchers__themes">
             <button
               className={theme ? "themes--active" : ""}
               onClick={() => handleTheme(true)}
             >
-              <span class="material-symbols-sharp">sunny</span>
+              <span className="material-symbols-sharp">sunny</span>
             </button>
             <button
               className={!theme ? "themes--active" : ""}
