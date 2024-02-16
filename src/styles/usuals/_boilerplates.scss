@@ -8,3 +8,9 @@
   outline: none;
   border: none;
 }
+header{
+  user-select: none;
+}
+button{
+  cursor: pointer;
+}

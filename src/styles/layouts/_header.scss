@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(40px);
   animation: scroll-down forwards;
   animation-timeline: scroll();
   animation-range-start: map-get($header-height, mobile); // I added it because background-transparency causing background white-like effect, just delete to witness it yourself
@@ -101,5 +101,12 @@
       @include flex(center);
       gap: 5rem;
     }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .header{
+    padding-inline: $desktop-inline-xl;
   }
 }

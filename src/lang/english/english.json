@@ -13,21 +13,23 @@
         },
         "advantages": {
           "advantages-heading": "Our advantages",
-          "first": {
-            "icon": "../assets/icons/tutors.png",
-            "name": "Experienced tutors",
-            "description": "Learn the basics of programming, then choose your own path."
-          },
-          "second": {
-            "icon": "../assets/icons/method.png",
-            "name": "Best Teaching Method",
-            "description": "Learn the basics of programming, then choose your own path."
-          },
-          "third": {
-            "icon": "../assets/icons/intensive.png",
-            "name": "Intensive course",
-            "description": "6 classes per week, 24/7 support."
-          }
+          "advantages-blocks": [
+            {
+              "icon": "tutors.png",
+              "name": "Experienced tutors",
+              "description": "Learn the basics of programming, then choose your own path."
+            },
+            {
+              "icon": "method.png",
+              "name": "Best Teaching Method",
+              "description": "Learn the basics of programming, then choose your own path."
+            },
+            {
+              "icon": "intensive.png",
+              "name": "Intensive course",
+              "description": "6 classes per week, 24/7 support."
+            }
+          ]
         },
         "achievements": {
           "achievements-heading": "Our achievements",

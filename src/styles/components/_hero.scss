@@ -7,7 +7,8 @@
   @include grid();
   justify-items: center;
   padding-inline: $mobile-inline;
-  height: map-get($hero-height, mobile);
+  padding-bottom: 5rem;
+  min-height: map-get($hero-height, mobile);
   &__content{
     order: 1;
     @include flex();
@@ -43,7 +44,7 @@
 @include responsive($tablet){
   .hero{
     @include grid(1fr 1fr);
-    height: map-get($hero-height, tablet);
+    min-height: map-get($hero-height, tablet);
     &__content{
       order: 0;
       @include flex(start);
@@ -70,7 +71,7 @@
 @include responsive($desktop){
   .hero{
     padding-inline: $desktop-inline;
-    height: map-get($hero-height, desktop);
+    min-height: map-get($hero-height, desktop);
     &__contentClass{
       h3{
         padding-right: 50%;
@@ -82,5 +83,11 @@
     &__map *{
       height: clamp(25rem, 30vw, 40rem);
     }
+  }
+}
+// desktop xl
+@include responsive($desktop-xl){
+  .hero{
+    padding-inline: $desktop-inline-xl;
   }
 }

@@ -1,0 +1,61 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+//------------- mobile
+.home{
+  // advantages
+  .advantages{
+    padding-inline: $mobile-inline;
+    padding-block: 5rem;
+    background-color: $light-blue;
+    &__heading{
+      text-align: center;
+      margin-bottom: 5rem
+    }
+    &__list{
+      @include grid(1fr);
+      gap: 2rem;
+      &__item{
+        @include flex();
+        gap: .5rem;
+        padding: 1rem;
+        background-color: $absolute-white;
+        border-radius: 1rem;
+        h5{
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+}
+
+//------------- tablet
+@include responsive($tablet){
+  .home{
+    // advantages
+    .advantages{
+      &__list{
+        @include grid(repeat(3, 1fr));
+        &__item{
+          @include flex(start);
+          flex-direction: column;
+          padding: 3rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+
+//------------- desktop
+@include responsive($desktop){
+  .home{
+    // advantages
+    .advantages{
+      &__list__item{
+        flex-direction: row;
+      }
+    }
+  }
+}

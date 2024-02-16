@@ -25,6 +25,11 @@
             font-size: clamp(3rem, 5vw, 8.2rem);
             color: $absolute-white;
             position: relative;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover{
+            transform: scale(.9a);
+            }
             &::before, &::after{
               content: "";
               aspect-ratio: 1/1;

@@ -28,7 +28,7 @@ function App() {
   }
   return (
     <div className="app">
-      <Header logo={logo} >
+      <Header logo={logo}>
         <select
           className="header__switchers__languages"
           value={lang}

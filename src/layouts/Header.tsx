@@ -25,7 +25,7 @@ export const Header = ({logo, children}:{logo:string, children:string}) => {
   return (
     <header className="header header--light">
       <aside className="header__aside">
-        <img src={logo} alt="logo" className="header__aside__logo" />
+        <img src={logo} alt="logo" className="header__aside__logo" draggable="false"/>
         <span
           className="material-symbols-outlined header__aside__menu"
           onClick={() => handleMenu()}
