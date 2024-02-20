@@ -1,22 +1,24 @@
+import React, {Suspense} from "react";
 // header icons
 import logo from "./assets/icons/logo.svg";
-
-
 // Routes 
-import { Route, Routes } from "react-router-dom"
-// Pages
-import { Home } from "./pages/Home"
-import { Courses } from "./pages/Courses"
-import { News } from "./pages/News"
-import { About } from "./pages/About"
-import { Contacts } from "./pages/Contacts"
+import { Route, Routes } from "react-router-dom";
+// Pages, Layouts & Components
+const Home = React.lazy(() => import("./pages/Home"))
+const Courses = React.lazy(() => import("./pages/Courses"))
+const News = React.lazy(() => import("./pages/News"))
+const About = React.lazy(() => import("./pages/About"))
+const Contacts = React.lazy(() => import("./pages/Contacts"))
+import { Loader } from "./components/Loader"
 import { Header } from "./layouts/Header"
 import { Footer } from "./layouts/Footer"
 import { NoMatch } from "./pages/NoMatch"
+import Course from "./pages/Course"
 // i18next
 import { useTranslation } from "react-i18next";
 // Hooks
 import { useState } from "react";
+
 function App() {
   //states
   const [lang, setlang] = useState("english")
@@ -26,6 +28,7 @@ function App() {
     i18n.changeLanguage(language)
     setlang(language)
   }
+  
   return (
     <div className="app">
       <Header logo={logo}>
@@ -41,15 +44,23 @@ function App() {
       </Header>
       <main>
         <Routes>
-          <Route index Component={Home} />
-          <Route path="courses" Component={Courses} />
-          <Route path="news" Component={News} />
-          <Route path="about" Component={About} />
-          <Route path="contacts" Component={Contacts} />
+          <Route index element={<Suspense fallback={<Loader/>}><Home /></Suspense>} />
+          <Route path="courses" element={<Suspense fallback={<Loader/>}><Courses/></Suspense>}>
+            <Route path=":courseName" Component={Course}/>
+          </Route>
+          <Route path="news" element={<Suspense fallback={<Loader/>}>
+            <News />
+          </Suspense>} />
+          <Route path="about" element={<Suspense fallback={<Loader/>}>
+            <About />
+          </Suspense>} />
+          <Route path="contacts" element={<Suspense fallback={<Loader/>}>
+            <Contacts />
+          </Suspense>}/>
           <Route path="*" Component={NoMatch} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

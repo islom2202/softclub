@@ -13,44 +13,64 @@
     },
     "advantages": {
       "advantages-heading": "Наши преимущества",
-      "first": {
-        "name": "Опытные репетиторы",
-        "description": "Наши инструкторы имеют опыт работы в реальных проектах"
-      },
-      "second": {
-        "name": "Лучший метод преподавания",
-        "description": "Изучите основы программирования, а затем выберите свой собственный путь."
-      },
-      "third": {
-        "name": "Интенсивный курс",
-        "description": "6 дневных занятий в неделю поддержка 24/7."
-      }
+      "advantages-blocks": [
+        {
+          "icon": "tutors.png",
+          "name": "Опытные репетиторы",
+          "description": "Наши инструкторы имеют опыт работы в реальных проектах"
+        },
+        {
+          "icon": "method.png",
+          "name": "Лучший метод преподавания",
+          "description": "Изучите основы программирования, а затем выберите свой собственный путь."
+        },
+        {
+          "icon": "intensive.png",
+          "name": "Интенсивный курс",
+          "description": "6 дневных занятий в неделю поддержка 24/7."
+        }
+      ]
     },
     "achievements": {
       "achievements-heading": "Наши успехи",
-      "first": {
-        "head": "6 лет",
-        "body": "Опыта преподавания"
-      },
-      "second": {
-        "head": "280+",
-        "body": "Количество выпускников"
-      },
-      "third": {
-        "head": "78%",
-        "body": "Трудоустроились в IT- компаниях"
-      },
-      "fourth": {
-        "head": "98%",
-        "body": "Готовы нас рекомендовать"
-      }
+      "achievements-blocks": [
+        {
+          "head": "6 лет",
+          "body": "Опыта преподавания"
+        },
+        {
+          "head": "280+",
+          "body": "Количество выпускников"
+        },
+        {
+          "head": "78%",
+          "body": "Трудоустроились в IT- компаниях"
+        },
+        {
+          "head": "98%",
+          "body": "Готовы нас рекомендовать"
+        }
+      ] 
     },
-    "feedbacks": {
-      "feedbacks-heading": "Our students' Testimonials",
-      "student1": {
-        "image": "../src/assets/images/student1.jpg",
-        "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
-      }
+    "reviews": {
+      "reviews-heading": "Что говорят наши cтуденты о нас",
+      "reviews-body": [
+        {
+          "image": "student1.jpg",
+          "name": "Бахром Панджшанбе",
+          "review": "Я научился создавать динамические и интерактивные веб-приложения с помощью React и заметил значительный прогресс в своих навыках программирования."
+        },
+        {
+          "image": "student2.jpg",
+          "name": "Алишер Джалилов",
+          "review": "Я научился создавать веб-приложения с использованием Javascript, HTML и CSS. Я заметил значительное улучшение в своих способностях создавать повторно используемые компоненты."
+        },
+        {
+          "image": "student3.jpg",
+          "name": "Рустам Ятимов",
+          "review": "Я улучшил свои навыки использования JSX, компонентов React и управления состоянием с помощью Redux, что привело к созданию более эффективных и масштабируемых веб-приложений."
+        }
+      ]
     }
   },
   "courses": {

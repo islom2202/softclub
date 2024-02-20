@@ -1,3 +1,4 @@
+*- please note that my clone is not 100% exact as original website, for reusability and simplicity purposes.*
 ## In this project I expect to use:
 1. `React-router-dom` - for client-side routing and SPA
 2. `Vite` - React new generation bundler

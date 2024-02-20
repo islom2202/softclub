@@ -11,6 +11,8 @@
 // components
 @forward "./components/hero";
 @forward "./components//buttons";
+@forward "./components/achievements";
+@forward "./components/loader";
 // pages
 @forward "./pages/about";
 @forward "./pages/home";

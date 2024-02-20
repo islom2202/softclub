@@ -33,29 +33,45 @@
         },
         "achievements": {
           "achievements-heading": "Our achievements",
-          "first": {
-            "head": "6 years",
-            "body": "Of teaching experience"
-          },
-          "second": {
-            "head": "280+",
-            "body": "The number of graduates"
-          },
-          "third": {
-            "head": "78%",
-            "body": "Employed in IT companies"
-          },
-          "fourth": {
-            "head": "98%",
-            "body": "Ready to recommend us"
-          }
+          "achievements-blocks": [
+            {
+              "head": "6 years",
+              "body": "Teaching experience"
+            },
+            {
+              "head": "280+",
+              "body": "Number of graduates"
+            },
+            {
+              "head": "78%",
+              "body": "Employed in IT companies"
+            },
+            {
+              "head": "98%",
+              "body": "Ready to recommend us"
+            }
+          ]
+          
         },
-        "feedbacks": {
-          "feedbacks-heading": "Our students' Testimonials",
-          "student1": {
-            "image": "../src/assets/images/student1.jpg",
-            "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
-          }
+        "reviews": {
+          "heading": "What our students say about us",
+          "body": [
+            {
+              "image": "student1.jpg",
+              "name": "Bahromi Panjshanbe",
+              "review": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
+            },
+            {
+              "image": "student2.jpg",
+              "name": "Alisher Jalilov",
+              "review": "I've learned building web applications using Javascript, HTML and CSS. I've seen a significant improvement in my ability to create reusable components."
+            },
+            {
+              "image": "student3.jpg",
+              "name": "Rustam Yatimov",
+              "review": "I've honed my skills in using JSX, React components, and state management with Redux, resulting in more efficient and scalable web applications."
+            }
+          ]
         }
     },
     "courses": {
@@ -65,6 +81,355 @@
         "description": "We guarantee you high quality lessons and the best instructors",
         "button":"Sign up for a course"
       }
+    },
+    "all-courses":{
+      "heading": "All Courses",
+      "body": [
+        {
+          "image": "olympiad.svg",
+          "name": "Olympiad",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 1,
+            "indicator": "Year",
+            "color": "#0085FF"
+          },
+          "description": "Preparatory course for the Olympiad. The course is taught in the C++ programming language as it is considered the fastest language.",
+          "details": {
+            "detaisls-heading": "Preparatory course for the Olympiad. The course is taught in the C++ programming language as it is considered the fastest language.",
+            "details-body": {
+              "info": {
+                "info-heading": "Why the Olympics?",
+                "info-body": [
+                  "In this course, you will get to know the intricacies of the C++ language and learn the logic of programming. The logic is the same in all programming languages, only the syntax is different. After completing this course, it will be easy for you to switch to other courses.",
+                  "Advanced companies such as Facebook, Google, and Amazon hire people who have completed the Olympiad course faster, and the questions asked for hiring are related to Olympiad questions. The algorithms you learn in this course will help you at work."
+                ]
+              },
+              "list": {
+                "list-heading": "Achievements of the Olympics:",
+                "list-body": [
+                  {
+                    "item-name": "",
+                    "item-description": "Unorthodox thinking"
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Discipline"
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Strong logic"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "react.svg",
+          "name": "React",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 2,
+            "indicator": "Months",
+            "color": "#59A7BC"
+          },
+          "description": "Build components, develop powerful web applications, and become a confident developer in the world of web technologies!",
+          "details": {
+            "detaisls-heading": "Build components, develop powerful web applications, and become a confident developer in the world of web technologies!",
+            "details-body": {
+              "info": {
+                "info-body": [
+                  "React JS for Beginners. We will learn how to develop web applications using the React library and form the basis for mastering other front-end frameworks.",
+                  "React JavaScript is a library in which you can write both JavaScript and Html in one line.",
+                  "In this course you will learn how to use hooks. Learn and know how Virtual DOM works.",
+                  "In the React course you will learn how to write in JSX format and at the end of the course you will work on a real project"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "javascript.svg",
+          "name": "Javascript",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 2,
+            "indicator": "Months",
+            "color": "#D1A313"
+          },
+          "description": "You will not only master programming, but also learn how to turn your creative ideas into interactive web applications.",
+          "details": {
+            "detaisls-heading": "You will not only master programming, but also learn how to turn your creative ideas into interactive web applications.",
+            "details-body": {
+              "info": {
+                "info-body": [
+                  "JavaScript is a key part of the front-end developer profession, used to create dynamic user interfaces (UI) of websites. Along with HTML and CSS, JavaScript will be your main tool in this exciting course. Here you will immerse yourself in the world of modern development, learning not only the basics of the language, but also the principles of creating dynamic and responsive web applications. Understand the concepts of asynchronous programming, interacting with APIs, and creating creative user interfaces. You will also master the use of the latest technologies such as React and Node.js. During the training process, you will become familiar with the principles of OOP, DOM, REST API and gain practical skills in creating websites using the React stack."
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "ui-ux.png",
+          "name": "UX/UI design",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 2,
+            "indicator": "Months",
+            "color": "#4A700C"
+          },
+          "description": "Learn what an interface is and how to evaluate its quality. Master Figma basics and visual design skills.",
+          "details": {
+            "detaisls-heading": "Learn what an interface is and how to evaluate its quality. Master Figma basics and visual design skills.",
+            "details-body": {
+              "info": {
+                "info-heading": "Who is a UX/UI designer?",
+                "info-body": [
+                  "An interface designer or UX/UI designer is a person who is responsible for creating a user-friendly, understandable interface that evokes positive emotions in the user. There are two blocks in interface design - UX and UI:"
+                ]
+              },
+              "list": {
+                "list-heading": "",
+                "list-body": [
+                  {
+                    "item-name": "- UX part (user experience) - ",
+                    "item-description": "concerns how the user interacts with the product, what steps he takes to take the desired action. For example, he wants to subscribe, but can’t figure out which link to click."
+                  },
+                  {
+                    "item-name": "- UI part (user interface) - ",
+                    "item-description": "everything that relates to visual design: colors, fonts, placement of elements, in other words, what the user sees."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "The task of an interface designer is to analyze user behavior scenarios and develop an easy-to-use interface. For a UX/UI specialist, it is important what kind of experience the user experiences and what emotions he experiences. If a person is uncomfortable, he will simply leave and go to another site or application."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "python.svg",
+          "name": "Python",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 3,
+            "indicator": "Months",
+            "color": "#21B49F"
+          },
+          "description": "Combine simplicity with power to create elegant code for web applications, data analytics, and artificial intelligence.",
+          "details": {
+            "detaisls-heading": "Combine simplicity with power to create elegant code for web applications, data analytics, and artificial intelligence.",
+            "details-body": {
+              "info": {
+                "info-heading": "",
+                "info-body": [
+                  "Ready to gain new skills and the tools developers use to create websites and web applications? This course, designed by the experienced software engineering from local and international companies, will prepare you for an entry-level career as a back-end developer."
+                ]
+              },
+              "list": {
+                "list-heading": "In this course, you’ll learn:",
+                "list-body": [
+                  {
+                    "item-name": "",
+                    "item-description": "1. Python Programming Language (the most popular choice for web development, machine learning, data science and artificial intelligence)"
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "2. Linux commands and Git repositories"
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "3. PostgreSQL, and how to write efficient SQL queries."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "4. REST APIs and Django Web Framework"
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "5. Technical interviews preparation for back-end developer roles."
+                  }
+                ]
+              },
+              "conclusion": "Throughout the program, you’ll engage in applied learning through hands-on activities to help level up your knowledge. At the end of each sections, you’ll create different projects that will help prepare you for the next steps in your engineer career journey. At the end of the program, there will be a real life project where you will bring all of your knowledge together to create a Django web app."
+            }
+          }
+        },
+        {
+          "image": "dot-net.svg",
+          "name": ".Net",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 2,
+            "indicator": "Months",
+            "color": "#AF70F6"
+          },
+          "description": "Dive into the world of technology where you will aspects of C#, ASP.NET and Entity Framework to create amazing solutions.",
+          "details": {
+            "detaisls-heading": "Dive into the world of technology where you will aspects of C#, ASP.NET and Entity Framework to create amazing solutions.",
+            "details-body": {
+              "info": {
+                "info-heading": "",
+                "info-body": [
+                  "Our course provides comprehensive training on modern tools and technologies in the field of .NET development. Students will gain in-depth knowledge of the C# programming language while diving into key .NET components such as Entity Framework Core (EF Core) and Language Integrated Query (LINQ). During the training, the emphasis is on practical experience gained through real-life projects, promoting effective learning of the material."
+                ],
+                "conclusion": "The course also includes an in-depth look at working with databases, with a focus on interacting with PostgreSQL through Entity Framework Core. Students will learn advanced backend development methodologies while applying their skills in creating robust and efficient web applications using ASP.NET. At the end of the course, graduates will be prepared for a successful career in backend application development, having a deep understanding of .NET technologies and the ability to apply them in practical problems."
+              }
+            }
+          }
+        },
+        {
+          "image": "html-css.svg",
+          "name": "HTML CSS",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 1,
+            "indicator": "Month",
+            "color": "#E44D26"
+          },
+          "description": "HTML and CSS are two fundamental technologies used to create web pages. Learn to create websites from scratch and hone your skills.",
+          "details": {
+            "detaisls-heading": "HTML and CSS are two fundamental technologies used to create web pages. Learn to create websites from scratch and hone your skills.",
+            "details-body": {
+              "info": {
+                "info-heading": "",
+                "info-body": [
+                  "Welcome to the world of web development, where HTML and CSS are your faithful companions in creating beautiful and functional web pages. In our course, you will dive into the basics of web craft, learn how to build websites from scratch, and acquire key skills to enter the field of web development. Learn to create stylish and responsive web pages using HTML and CSS principles. This course is your first step into the exciting world of web development. Join us and let's turn your ideas into web reality!"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "cpp.svg",
+          "name": "C++",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 1,
+            "indicator": "Month",
+            "color": "#00599C"
+          },
+          "description": "Your first step into the world of programming, where you'll learn the basics of C++ with hands-on exercises and professional guidance.",
+          "details": {
+            "detaisls-heading": "Your first step into the world of programming, where you'll learn the basics of C++ with hands-on exercises and professional guidance.",
+            "details-body": {
+              "info": {
+                "info-heading": "",
+                "info-body": [
+                  "This course, designed especially for absolute beginners who are eager to learn the fundamentals of programming using the C++ language. This course covers everything you need to know about C++, such as variable,syntax, data types, operators, loops, functions and arrays in C++, this course provides a solid foundation in C++. Dive into logic building and explore C++ functions in this comprehensive program basics to more advanced concepts. So, by the end of this course, you will be able to write code in C++ with confidence. If you are looking for a comprehensive, easy to understand, well organized and practical course that will take you from zero to hero, this is the right C++ course. You don't need any prior knowledge of C++ or programming in general. Everything you need to know about C++ is in one place, so you don't have to jump between random lessons."
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "c-sharp.svg",
+          "name": "C#",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 2,
+            "indicator": "Months",
+            "color": "#9A5196"
+          },
+          "description": "We start learning backend development with the basics of C# and the .NET framework and gradually move on to more complex algorithms.",
+          "details": {
+            "detaisls-heading": "We start learning backend development with the basics of C# and the .NET framework and gradually move on to more complex algorithms.",
+            "details-body": {
+              "info": {
+                "info-heading": "We study a popular language from Microsoft.",
+                "info-body": [
+                  "C# (pronounced C Sharp) is a programming language from Microsoft. Initially, it was created for projects under Windows, but now it is a truly universal language: games, desktop applications, web services, neural networks, and even graphics for metaverses are written in it.",
+                  "C# is the fifth most popular programming language in the world. It is used by banks, digital agencies, communication providers and large IT companies. Here's what Russian and foreign corporations write in C#:"
+                ]
+              },
+              "list": {
+                "list-heading": "",
+                "list-body": [
+                  {
+                    "item-name": "",
+                    "item-description": "Microsoft - applications for Windows and Xbox."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Tesla - corporate web services and programs."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Stack Overflow - server-side logic of sites."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Sberbank - 3D graphics and virtual reality programs."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "Ozon - warehouse and logistics systems."
+                  },
+                  {
+                    "item-name": "",
+                    "item-description": "\"Yandex\" - applications for sales automation."
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "image": "scratch.svg",
+          "name": "Kids",
+          "start": {
+            "heading": "Start",
+            "body": "12 February"
+          },
+          "duration": {
+            "number": 5,
+            "indicator": "Months",
+            "color": "#3D7CD5"
+          },
+          "description": "An exciting programming course for kids! From coding puzzles to creative projects using the Scratch programming language, where imagination meets innovation!",
+          "details": {
+            "detaisls-heading": "An exciting programming course for kids! From coding puzzles to creative projects using the Scratch programming language, where imagination meets innovation!",
+            "details-body": {
+              "info": {
+                "info-heading": "",
+                "info-body": [
+                  "Welcome to the fascinating world of Scratch programming language! In this scratch learning class, you will learn about the unique characteristics and abilities of this distinctive language. This course is designed to guide you towards mastering more complex scratch bases and techniques, so that you can implement your projects with this creative language.",
+                  "During this educational adventure, you will learn the basic principles of Scratch programming and with practical exercises, you will improve your ability to write amazing code in this language. This course aims to turn you into an experienced scratch programmer, where each line of your code creates a compelling and actionable story. Join us to explore the exciting and creative world of scratch and become known as an artist in the programming world of this language"
+                ]
+              }
+            }
+          }
+        }
+      ]
     },
     "news": {
       "hero": {

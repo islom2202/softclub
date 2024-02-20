@@ -6,15 +6,15 @@
   .header{
     background-color: $light-hero;
     a,select,button,.material-symbols-outlined{
-      color: $nav;
+      color: $gray;
       background-color: transparent;
     }
     .themes--active{
-      background-color: rgba(186, 186, 186, 0.549);
+      background-color: rgba(186, 186, 186, 0.235);
     }
   }
   // hero
-  .hero{
+  .hero, .loader{
       background-color: $light-hero;
   }
 }
@@ -29,18 +29,25 @@
       filter: brightness(2)
     }
     a,select,button,.material-symbols-outlined{
-      color: $nav-dark;
+      color: $light-gray;
     }
-    .active{
-        color: $active-nav-dark;
-    }
+
     option{
       background-color: $dark-hero;
     }
   }
   // hero
-  .hero{
+  .hero, .loader{
     background-color: $dark-hero;
     color: $light-hero;
+  }
+  // advantages, achievements & reviews
+  .advantages, .achievements, .reviews{
+    background-color: $dark;
+    color: $absolute-white;
+    small,p{color: $light-gray;}
+    .advantages__list__item{
+      background-color: $dark-blue;
+    }
   }
 }

@@ -1,10 +1,21 @@
+// router
+import { Link } from "react-router-dom";
+// 18next
 import { useTranslation } from "react-i18next"
-import { Hero } from "../components/Hero"
-import homeHero from "../assets/images/home-hero.svg"
+// image and icon utils
 import {getIconUrl} from "../utils/icons-utils.ts";
-export const Home = () => {
+// images and icons
+import homeHero from "../assets/images/home-hero.svg"
+// components
+import { Hero } from "../components/Hero"
+import { Achievements } from "../components/Achievements.tsx";
+import Reviews from "../components/Reviews.tsx";
+const Home = () => {
   const { t } = useTranslation()
-  const advatages:{icon:string, name:string, description:string}[] = t("home.advantages.advantages-blocks", {returnObjects: true})
+  // advantages t-data
+  const advatages: { name: string, icon: string, description: string }[] = t("home.advantages.advantages-blocks", {returnObjects: true})
+  // courses t-data
+  const courses:any = t("all-courses.body", {returnObjects: true})
   return (
     <div className="home">
       {/*Hero*/}
@@ -26,11 +37,47 @@ export const Home = () => {
                 <h5>{el.name}</h5>
                 <small>{el.description}</small>
               </div>
-              <img src="../assets/icons/tutors.png" alt="" />
             </li>
           ))}
         </ul>
       </article>
+      {/*Achievements*/}
+      <Achievements />
+      {/*Reviews*/}
+      <Reviews />
+      {/*All courses*/}
+      <article className="all-courses">
+        <h4 className="all-courses__heading">{t("all-courses.heading")}</h4>
+        <nav className="all-courses__body">
+          {courses.map((el: any) => (
+            <Link
+              to={`/courses/${el.name}`}
+              className="all-courses__body__course"
+            >
+              <div>
+                <p
+                  className="all-courses__body__course__duration"
+                  style={{ color: el.duration.color }}
+                >
+                  {el.duration.number} <small>{el.duration.indicator}</small>
+                </p>
+                <h4>{el.name}</h4>
+                <p className="all-courses__body__course__start">
+                  <span>{el.start.heading}</span>
+                  {el.start.body}
+                </p>
+              </div>
+              <img src={getIconUrl(el.image)} alt="" />
+            </Link>
+          ))}
+        </nav>
+        <button className="button button--outlined">
+          {t("all-courses.heading")}{" "}
+          <span className="material-symbols-outlined">arrow_right_alt</span>
+        </button>
+      </article>
     </div>
   )
 }
+
+export default Home

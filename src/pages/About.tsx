@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import hero from "../assets/images/about-hero.png";
-export const About = () => {
+const About = () => {
   const {t} = useTranslation()
   return (
     <div className="about">
@@ -17,3 +17,4 @@ export const About = () => {
     </div>
   )
 }
+export default About;

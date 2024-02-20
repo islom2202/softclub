@@ -18,12 +18,93 @@
       gap: 2rem;
       &__item{
         @include flex();
-        gap: .5rem;
+        gap: 1.5rem;
         padding: 1rem;
         background-color: $absolute-white;
         border-radius: 1rem;
+        img{
+          max-width: 5.17rem;
+        }
         h5{
           margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+  // reviews
+  .reviews{
+    @extend .advantages;
+    padding-bottom: 10rem;
+    &__heading{
+      text-align: center;
+      margin-bottom: 5rem
+    }
+    &__list{
+      @include grid(1fr);
+      gap: 6rem;
+      justify-items: center;
+      &__item{
+        @include flex();
+        max-width: 30rem;
+        text-align: center;
+        flex-direction: column;
+        img{
+          width: 40vw;
+          max-width: 20rem;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 50%; 
+        }
+        h5{
+          letter-spacing: .1rem;
+          padding: 1.5rem 0 .5rem 0;
+        }
+        p{
+          font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+        }
+      }
+    }
+  }
+  // all-courses
+  .all-courses{
+    padding-block: 9rem;
+    background-color: $dark-hero;
+    @extend .reviews;
+    @include flex(center);
+    flex-direction: column;
+    &__heading{
+      margin-bottom: 5rem;
+      color: $absolute-white;
+    }
+    &__body{
+      @include grid(1fr);
+      margin-bottom: 4rem;
+      gap: 2rem;
+      &__course{
+        @include flex(center, space-between);
+        width: 100%;
+        max-width: 40rem;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        background-color: $dark-blue;
+        color: $absolute-white;
+        &__duration{
+          @include flex(center);
+          gap: .7rem;
+          font-weight: 600;
+          font-size: clamp(1.7rem, 2vw, 2.4rem);
+        }
+        &__start{
+          @include flex();
+          gap: .8rem;
+          padding-top: 1.5rem;
+          span{
+            color: $light-gray
+          }
+        }
+        img{
+          width: clamp(8rem, 25vw, 12rem);
         }
       }
     }
@@ -44,6 +125,21 @@
         }
       }
     }
+    // reviews
+    .reviews__list{
+      @include grid(1fr 1fr 1fr);
+      gap: 2rem;
+      img{
+        max-width: 14rem;
+      }
+    }
+    // all-courses
+    .all-courses__body{
+      @include grid(1fr 1fr);
+      &__course{
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -53,9 +149,35 @@
   .home{
     // advantages
     .advantages{
+      padding-inline: $desktop-inline;
       &__list__item{
         flex-direction: row;
+        gap: 1rem;
       }
+    }
+    // reviews
+    .reviews__list{
+      gap: 5rem;
+      img{
+        max-width: 20rem;
+      }
+    }
+    // all-courses
+    .all-courses__body{
+      @include grid(1fr 1fr 1fr);
+      &__course:last-child{
+        display: none;
+      }
+    }
+  }
+}
+
+//------------- desktop xl
+@include responsive($desktop-xl){
+  .home{
+    // advantages
+    .advantages{
+      padding-inline: $desktop-inline-xl;
     }
   }
 }

@@ -1,0 +1,61 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+//------------- mobile
+.achievements{
+    padding-inline: $mobile-inline;
+    padding-block: 5rem;
+    background-color: $light-blue;
+    &__heading{
+      text-align: center;
+      margin-bottom: 5rem
+    }
+    &__list{
+      @include grid(1fr);
+      gap: 2rem;
+      text-align: center;
+      &__item{
+        h5{
+          font-size: clamp(2.8rem, 3vw, 3.2rem);
+          color: $blue-gray;
+        }
+        p{
+          font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+          color: $dark;
+        }
+      }
+    }
+}
+//------------- tablet
+@include responsive($tablet){
+  .achievements__list{
+      @include grid(repeat(4, 1fr));
+      gap: 0;
+    }
+}
+//------------- desktop
+@include responsive($desktop){
+  .achievements{
+    padding-inline: $desktop-inline;
+      &__list{
+        @include grid(repeat(4, 1fr));
+        text-align: start;
+        &__item{
+          padding-inline: 6rem;
+          &:nth-child(2){
+            border-inline: 1px solid $light-gray; // light gray
+          }
+          &:nth-child(3){
+            border-right: 1px solid $light-gray; // light gray;
+          }
+        }
+      }
+  }
+}
+//------------- desktop xl
+@include responsive($desktop-xl){
+  .achievements{
+    padding-inline: $desktop-inline-xl;
+  }
+}

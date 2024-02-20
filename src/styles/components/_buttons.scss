@@ -1,9 +1,17 @@
 @use "../usuals/colors" as *;
 @use "../usuals/mixins" as *;
 .button{
+  @include flex(center);
+  gap: 1rem;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
   background-color: $blue-gray;
   color: $absolute-white;
   font-weight: 700;
+  &--outlined{
+    @extend .button;
+    background-color: transparent;
+    color: $blue-gray;
+    border: 2px solid $blue-gray;
+  }
 }

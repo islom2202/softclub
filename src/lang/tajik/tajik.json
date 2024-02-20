@@ -13,44 +13,64 @@
     },
     "advantages": {
       "advantages-heading": "Бартарияти мо",
-      "first": {
-        "name": "Омӯзгорони ботаҷриба",
-        "description": "Омӯзгорони мо дар сохтани лоиҳаҳои воқеӣ таҷриба доранд."
-      },
-      "second": {
-        "name": "Беҳтарин усyли таълим",
-        "description": "Асосҳои барномасозиро омухта, баъдан роҳи худро интихоб кунед."
-      },
-      "third": {
-        "name": "Курси босуръат",
-        "description": "Ҳафтаина 6 рӯзи дарсӣ ва дастгирии 24/7."
-      }
+      "advantages-blocks": [
+        {
+          "icon": "tutors.png",
+          "name": "Омӯзгорони ботаҷриба",
+          "description": "Омӯзгорони мо дар сохтани лоиҳаҳои воқеӣ таҷриба доранд."
+        },
+        {
+          "icon": "method.png",
+          "name": "Беҳтарин усyли таълим",
+          "description": "Асосҳои барномасозиро омухта, баъдан роҳи худро интихоб кунед."
+        },
+        {
+          "icon": "intensive.png",
+          "name": "Курси босуръат",
+          "description": "Ҳафтаина 6 рӯзи дарсӣ ва дастгирии 24/7."
+        }
+      ]
     },
     "achievements": {
       "achievements-heading": "Дастовардҳои мо",
-      "first": {
-        "head": "6 сол",
-        "body": "Таҷрибаи омӯзгорӣ"
-      },
-      "second": {
-        "head": "280+",
-        "body": "Миқдори хатмкунандагон"
-      },
-      "third": {
-        "head": "78%",
-        "body": "Дар ширкатҳои IT кор мекунад"
-      },
-      "fourth": {
-        "head": "98%",
-        "body": "Омодаанд моро тавсия диҳад"
-      }
+      "achievements-blocks": [
+        {
+          "head": "6 сол",
+          "body": "Таҷрибаи омӯзгорӣ"
+        },
+        {
+          "head": "280+",
+          "body": "Миқдори хатмкунандагон"
+        },
+        {
+          "head": "78%",
+          "body": "Дар ширкатҳои IT кор мекунад"
+        },
+        {
+          "head": "98%",
+          "body": "Омодаанд моро тавсия диҳад"
+        }
+      ]
     },
-    "feedbacks": {
-      "feedbacks-heading": "Our students' Testimonials",
-      "student1": {
-        "image": "../src/assets/images/student1.jpg",
-        "feedback": "I've learned how to build dynamic and interactive web applications using React, and I've seen a significant improvement in my coding skills."
-      }
+    "reviews": {
+      "reviews-heading": "Донишҷӯёни мо дар бораи мо чи мегӯянд",
+      "reviews-body": [
+            {
+              "image": "student1.jpg",
+              "name": "Баҳроми Панҷшанбе",
+              "review": "Бо истифода аз React чӣ гуна сохтани веб-барномаҳои динамикӣ ва интерактивиро омӯхтам ва дар малакаҳои коднависии худ беҳбудии назаррасро дидам."
+            },
+            {
+              "image": "student2.jpg",
+              "name": "Алишер Ҷалилов",
+              "review": "Сохтани веб-барномаҳоро бо истифода аз Javascript, HTML ва CSS омӯхтам ва беҳбудиро дар қобилияти истифодабарии компонентҳои аз нав истифодашаванда (reusable components) дидам."
+            },
+            {
+              "image": "student3.jpg",
+              "name": "Рустам Ятимов",
+              "review": "Малакаҳои худро дар истифодаи JSX, ҷузъҳои React ва идоракунии ҳолатҳо бо истифодабарии Redux такмил додам, ки дар натиҷа веб-барномаҳои самараноктар ва миқёспазиртар сохтам."
+            }
+          ]
     }
   },
   "courses": {

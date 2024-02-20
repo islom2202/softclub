@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 // i18next hook
 import { useTranslation } from "react-i18next";
 // header icons
-export const Header = ({logo, children}:{logo:string, children:string}) => {
+export const Header = ({logo, children}:{logo:string, children:any}) => {
   //states
   const [burger, setburger] = useState('menu')
   const [hide, sethide] = useState("header--hide")

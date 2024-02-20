@@ -1,7 +1,7 @@
 import image from "../assets/images/courses-hero.png";
 import { Hero } from "../components/Hero";
 import { useTranslation } from "react-i18next";
-export const Courses = () => {
+const Courses = () => {
   const {t} = useTranslation()
   return (
     <div className="courses">
@@ -17,3 +17,4 @@ export const Courses = () => {
     </div>
   )
 }
+export default Courses
