@@ -5,9 +5,7 @@ const Course = () => {
   const {courseName} = useParams()
   const courses:any = t("all-courses.body", {returnObjects: true})
   return (
-    courses.find((course:any) => course.name == courseName).map((el:any) => 
-      <article className="course"><h2>{el.name}</h2></article>
-    )
+    courses.map((el:any) => el.name == courseName && <article className="course"><h2>{el.name}</h2></article>)
   )
 }
 

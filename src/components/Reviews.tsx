@@ -8,7 +8,7 @@ const Reviews = () => {
   const reviews:{image:string, name:string, review:string}[] = t("home.reviews.body", {returnObjects: true});
   return (
     <article className="reviews">
-      <h4 className="reviews__heading">{t("home.reviews.reviews-heading")}</h4>
+      <h4 className="reviews__heading">{t("home.reviews.heading")}</h4>
       <ul className="reviews__list">
         {reviews.map((el) => (
           <li className="reviews__list__item">

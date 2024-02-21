@@ -45,18 +45,11 @@ function App() {
       <main>
         <Routes>
           <Route index element={<Suspense fallback={<Loader/>}><Home /></Suspense>} />
-          <Route path="courses" element={<Suspense fallback={<Loader/>}><Courses/></Suspense>}>
-            <Route path=":courseName" Component={Course}/>
-          </Route>
-          <Route path="news" element={<Suspense fallback={<Loader/>}>
-            <News />
-          </Suspense>} />
-          <Route path="about" element={<Suspense fallback={<Loader/>}>
-            <About />
-          </Suspense>} />
-          <Route path="contacts" element={<Suspense fallback={<Loader/>}>
-            <Contacts />
-          </Suspense>}/>
+          <Route path="courses" element={<Suspense fallback={<Loader/>}><Courses/></Suspense>}/>
+          <Route path="courses/:courseName" Component={Course}/>
+          <Route path="news" element={<Suspense fallback={<Loader/>}><News /></Suspense>} />
+          <Route path="about" element={<Suspense fallback={<Loader/>}><About /></Suspense>} />
+          <Route path="contacts" element={<Suspense fallback={<Loader/>}><Contacts /></Suspense>}/>
           <Route path="*" Component={NoMatch} />
         </Routes>
       </main>
