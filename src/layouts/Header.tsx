@@ -21,9 +21,8 @@ export const Header = ({logo, children}:{logo:string, children:any}) => {
   };
   // i18n languages
   const {t} = useTranslation()
-
   return (
-    <header className="header header--light">
+    <header className="header">
       <aside className="header__aside">
         <img src={logo} alt="logo" className="header__aside__logo" draggable="false"/>
         <span
