@@ -42,11 +42,11 @@
     color: $light-hero;
   }
   // advantages, achievements & reviews
-  .advantages, .achievements, .reviews{
+  .advantages, .achievements, .reviews, .academy-news{
     background-color: $dark;
     color: $absolute-white;
     small,p{color: $light-gray;}
-    .advantages__list__item{
+    .advantages__list__item, .academy-news__list__item{
       background-color: $dark-blue;
     }
   }

@@ -10,6 +10,9 @@ import homeHero from "../assets/images/home-hero.svg"
 import { Hero } from "../components/Hero"
 import { Achievements } from "../components/Achievements.tsx";
 import Reviews from "../components/Reviews.tsx";
+import AcademyNews from "../components/AcademyNews.tsx";
+// typescript objects - states
+import { comments } from "../newsComments.ts";
 const Home = () => {
   const { t } = useTranslation()
   // advantages t-data
@@ -76,6 +79,8 @@ const Home = () => {
           <span className="material-symbols-outlined">arrow_right_alt</span>
         </button>
       </article>
+      {/*Academy news*/}
+      <AcademyNews likes={comments.likes} messagesList={comments.messagesList.length}/>
     </div>
   )
 }

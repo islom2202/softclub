@@ -448,6 +448,39 @@
         }
       ]
     },
+    "academy-news": {
+      "heading": "Academy news",
+      "body":[
+        {
+            "image1": "news1.png",
+            "name": "New courses at Softclub",
+            "startDate": "Start: 11 March",
+            "publishDate": "12 February 2024",
+            "more": "More >",
+            "watched": "Watched",
+          "image2": "news1-opened.png",
+          "list-heading": "🔥🔥Opportunities offered by our Academy:",
+          "list-items": [
+            "📌Education with results: our graduates are already working in domestic and foreign companies.",
+            "📌Our teachers are experienced: All of them have experience working in any famous domestic companies such as Alif, Humo, RIO and abroad Chocofamily, Webartuar and others.",
+            "📌 Comprehensive preparation:",
+            "In all our courses we teach the nuances from 0 to 100%.",
+            "📌Students who are lagging behind in this or that topic, after the lesson, they can ask their questions and repeat the topic again.",
+            "📌The best educational materials: our books and presentations are the products of our teachers and have no equal in Tajikistan.",
+            "📌Our hot classes are always at your disposal with all conditions. Come at a time convenient for you, use the free Internet and do your practical work or homework with the help of teachers."
+          ],
+          "button": "Sign up"
+        }
+      ],
+      "viewAll": "View all  →",
+      "messages": {
+        "heading": "Add commentary",
+        "name": "Name *",
+        "namePlaceholder": "Type your name",
+        "button": "Send →",
+        "commentaryPlaceholder": "Commentary"
+      }
+    },
     "companies": {
       "header": "Our graduates work here",
       "body": [
@@ -501,4 +534,5 @@
         }
       ]
     }
+    
 }

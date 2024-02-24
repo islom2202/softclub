@@ -1,0 +1,101 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.academy-news {
+  padding-block: 5rem;
+  padding-inline: $mobile-inline;
+  @include flex();
+  flex-direction: column;
+  &__heading {
+    margin-bottom: 5rem;
+    align-self: flex-start
+  }
+  &__list {
+    @include grid(1fr);
+    padding-bottom: 2rem;
+    gap: 5rem;
+    &__item{
+      border: .1rem solid;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 40rem;
+      &__imgWrapper {
+        width: 100%;
+        position: relative;
+        &__iconsWrapper {
+          position: absolute;
+          inset: 5% 5% auto auto;
+          padding-inline: 1rem;
+          @include grid(1fr 1fr);
+          gap: 1rem;
+          background-color: rgba(0, 0, 0, 0.67);
+          border-radius: .5rem;
+          color: $absolute-white;
+          span {
+            @include flex(center);
+            gap: 1rem;
+            &:nth-child(2){
+              span{
+                margin-bottom: .3rem;
+              }
+            }
+          }
+        }
+        img {
+          width: 100%;
+          border-radius: 1rem;
+        }
+      }
+      &__name{
+        margin-block: 1.5rem;
+        text-align: center;
+      }
+      &__publish-date{
+        @include flex(center, space-between);
+        padding-top: 2rem;
+        font-weight: 550;
+        a{
+          color: $blue-gray;
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@include responsive($tablet) {
+  .academy-news {
+    &__list{
+      padding-bottom: 5rem;
+      &:has(&__item:nth-child(2)){
+        @include grid(1fr 1fr);
+      }
+      &__item{
+        padding: 2rem 2rem 4rem 2rem;
+        max-width: 70rem;
+      }
+    }
+  }
+}
+
+// desktop
+@include responsive($desktop) {
+  .academy-news {
+    padding-inline: $desktop-inline;
+    padding-bottom: 3rem;
+    &__heading{
+      align-self: center;
+    }
+    &__list {
+      &:has(&__item:nth-child(3)){
+        @include grid(1fr 1fr 1fr);
+      }
+      &__item{
+        padding: 3rem 3rem 7rem 3rem;
+      }
+    }
+  }
+}

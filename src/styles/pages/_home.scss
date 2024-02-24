@@ -8,7 +8,6 @@
   .advantages{
     padding-inline: $mobile-inline;
     padding-block: 5rem;
-    background-color: $light-blue;
     &__heading{
       text-align: center;
       margin-bottom: 5rem
@@ -73,7 +72,7 @@
     padding-block: 9rem;
     background-color: $dark-hero;
     @extend .reviews;
-    @include flex(center);
+    @include flex();
     flex-direction: column;
     &__heading{
       margin-bottom: 5rem;
@@ -81,12 +80,13 @@
     }
     &__body{
       @include grid(1fr);
+      width: 100%;
+      justify-items: center;
       margin-bottom: 4rem;
       gap: 2rem;
       &__course{
         @include flex(center, space-between);
-        width: 100%;
-        max-width: 40rem;
+        width: clamp(20rem, 100%, 40rem);
         padding: 3rem;
         border-radius: 1.5rem;
         background-color: $dark-blue;

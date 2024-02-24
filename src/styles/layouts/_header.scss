@@ -8,8 +8,8 @@
   min-height: map-get($header-height, mobile);
   position: sticky;
   padding-block: 1.2rem;
-  top: 0;
-  left: 0;
+  inset: 0 0 auto 0;
+  z-index: 99;
   width: 100%;
   backdrop-filter: blur(40px);
   animation: scroll-down forwards;
