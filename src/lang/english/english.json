@@ -522,15 +522,27 @@
       "button": "Certificate example"
     },
     "teachers": {
-      "heading": {
-        "top": "Meet The Team",
-        "bottom": "Our Professionals"
-      },
+      "heading":  "Our teachers are practicing specialists",
       "body": [
         {
           "image": "teacher1.jpg",
           "name": "Eraj Kabutov",
-          "title": "Frontend Specialist"
+          "title": "Programming Leader"
+        },
+        {
+          "image": "teacher2.jpg",
+          "name": "Zoirsho Rahimov",
+          "title": "Web Developer"
+        },
+        {
+          "image": "teacher3.jpg",
+          "name": "Dilnoza Karimova",
+          "title": "Creative Leader"
+        },
+        {
+          "image": "teacher4.jpg",
+          "name": "Alex Greenfield",
+          "title": "Sales Manager"
         }
       ]
     }

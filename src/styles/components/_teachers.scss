@@ -1,0 +1,62 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.teachers{
+  padding-inline: $mobile-inline;
+  padding-block: 7rem;
+  text-align: center;
+  $font-sizes:(
+    h4:clamp(2rem, 2vw, 1.8rem),
+    p:clamp(1.5rem, 1.5vw, 1.7rem)
+  );
+  @each $tag,$size in $font-sizes{
+    #{$tag}{
+      font-size:$size;
+    }
+  }
+  &__list{
+    @include grid(1fr);
+    gap: 5rem;
+    padding-top: 5rem;
+    &__item{
+      @include flex();
+      flex-direction: column;
+      img{
+        width: 60%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 20%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+// tablet
+@include responsive($tablet){
+  .teachers__list{
+    @include grid(1fr 1fr);
+  }
+}
+
+//desktop
+@include responsive($desktop){
+  .teachers{
+    padding-inline: $desktop-inline;
+    &__list{
+      @include grid(1fr 1fr 1fr 1fr);
+      img{
+        width: 90%;
+      }
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .teachers{
+    padding-inline: $desktop-inline-xl;
+  }
+}

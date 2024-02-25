@@ -24,9 +24,6 @@
           transform: translateX(-100%);
         }
       }
-      &__item img {
-        width: clamp(3rem, 100vw, 17rem);
-      }
     }
     &::before, &::after{
       content: "";
@@ -44,7 +41,6 @@
   }
 }
 
-// tablet
 // desktop
 @include responsive($tablet) {
   .companies {
