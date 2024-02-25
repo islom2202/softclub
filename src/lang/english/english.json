@@ -482,10 +482,10 @@
       }
     },
     "companies": {
-      "header": "Our graduates work here",
+      "heading": "Our graduates work here",
       "body": [
         "alif.svg",
-        "home.svg",
+        "humo.svg",
         "dushanbe-city.svg",
         "vatan.svg",
         "livo.svg",

@@ -11,6 +11,7 @@ import { Hero } from "../components/Hero"
 import { Achievements } from "../components/Achievements.tsx";
 import Reviews from "../components/Reviews.tsx";
 import AcademyNews from "../components/AcademyNews.tsx";
+import { Companies } from "../components/Companies.tsx";
 // typescript objects - states
 import { comments } from "../newsComments.ts";
 const Home = () => {
@@ -81,6 +82,8 @@ const Home = () => {
       </article>
       {/*Academy news*/}
       <AcademyNews likes={comments.likes} messagesList={comments.messagesList.length}/>
+      {/*Companies*/}
+      <Companies />
     </div>
   )
 }

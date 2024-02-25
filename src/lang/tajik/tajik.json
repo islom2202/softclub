@@ -479,5 +479,17 @@
       "button": "Равон кардан →",
       "commentaryPlaceholder": "Шарҳ (Коментарий)"
     }
+  },
+  "companies": {
+    "heading": "Дар ин ҷо дастпарварони мо кор мекунанд",
+    "body": [
+      "alif.svg",
+      "humo.svg",
+      "dushanbe-city.svg",
+      "vatan.svg",
+      "livo.svg",
+      "eskhata.svg",
+      "s-pay.svg"
+    ]
   }
 }

@@ -479,5 +479,17 @@
       "button": "Отправить →",
       "commentaryPlaceholder": "Коментарий"
     }
+  },
+  "companies": {
+    "heading": "Здесь работают наши выпускники",
+    "body": [
+      "alif.svg",
+      "humo.svg",
+      "dushanbe-city.svg",
+      "vatan.svg",
+      "livo.svg",
+      "eskhata.svg",
+      "s-pay.svg"
+    ]
   }
 }

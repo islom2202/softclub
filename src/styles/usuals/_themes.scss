@@ -41,13 +41,20 @@
     background-color: $dark-hero;
     color: $light-hero;
   }
-  // advantages, achievements & reviews
-  .advantages, .achievements, .reviews, .academy-news{
+  // advantages, achievements, reviews, academy-news, comanies
+  .advantages, .achievements, .reviews, .academy-news, .companies{
     background-color: $dark;
+    filter: brightness(1.2);
     color: $absolute-white;
     small,p{color: $light-gray;}
     .advantages__list__item, .academy-news__list__item{
       background-color: $dark-blue;
+    }
+    .companies__list-wrapper::after{
+      background: linear-gradient(to left, $dark, transparent);
+    }
+    .companies__list-wrapper::before{
+      background: linear-gradient(to right, $dark, transparent);
     }
   }
 }

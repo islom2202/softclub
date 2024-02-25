@@ -1,0 +1,65 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.companies {
+  padding-inline: $mobile-inline;
+  padding-block: 5rem;
+  &__heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__list-wrapper {
+    @include flex();
+    position: relative;
+    overflow-x: hidden;
+    &__list {
+      @include flex();
+      gap: 2rem;
+      padding-inline: 1rem;
+      animation: scroll-left 26s linear infinite;
+      @keyframes scroll-left {
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      &__item img {
+        width: clamp(3rem, 100vw, 17rem);
+      }
+    }
+    &::before, &::after{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 15%;
+      inset: 0 auto auto 0;
+      background: linear-gradient(to right, white, transparent);
+      z-index: 1;
+    }
+    &::after{
+      inset: 0 0 auto auto;
+      background: linear-gradient(to left, white, transparent);
+    }
+  }
+}
+
+// tablet
+// desktop
+@include responsive($tablet) {
+  .companies {
+    padding-inline: $desktop-inline;
+    &__list-wrapper {
+      &__list {
+        gap: 5rem;
+        padding-inline: 2.5rem;
+      }
+    }
+  }
+}
+// desktop xl
+@include responsive($desktop-xl) {
+  .companies {
+    padding-inline: $desktop-inline-xl;
+  }
+}
