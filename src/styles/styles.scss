@@ -7,7 +7,7 @@
 
 // layouts
 @forward "./layouts/header";
-@forward "./layouts/main";
+@forward "./layouts/footer";
 // components
 @forward "./components/hero";
 @forward "./components//buttons";
@@ -16,6 +16,7 @@
 @forward "./components/academy-news";
 @forward "./components/companies";
 @forward "./components/teachers";
+@forward "./components/form";
 // pages
 @forward "./pages/about";
 @forward "./pages/home";

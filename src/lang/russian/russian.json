@@ -516,5 +516,71 @@
         "title": "Менеджер по продажам"
       }
     ]
+  },
+  "form": {
+    "heading": "Получить консультацию или записаться на курс",
+    "inputs": [
+      {
+        "label": "Имя",
+        "placeholder": "Введите имя",
+        "type": "text",
+        "name": "name",
+        "invalid": "введите правильное имя"
+      },
+      {
+        "label": "Номер телефона",
+        "placeholder": "Enter number",
+        "type": "tel",
+        "name": "tel",
+        "invalid": "не должно быть меньше или больше 9 цифр"
+      },
+      {
+        "label": "Электронная почта",
+        "placeholder": "example@example.com",
+        "type": "email",
+        "name": "email",
+        "invalid": "пожалуйста, введите действительный адрес электронной почты"
+      }
+    ],
+    "button": "Отправить",
+    "policy": "Нажимая на кнопку, вы соглашаетесь с условиями Политики конфиденциальности",
+    "footer": [
+      "Оставьте заявку",
+      "Мы позвоним с 09:00 до 18:00",
+      "Ответим на ваши вопросы",
+      "Поможем с выбором курса"
+    ]
+  },
+  "footer": {
+    "softclub": {
+      "image": "logo-white.png",
+      "description": "Изучайте программирование с лучшими инструкторами из Таджикистана и других стран.",
+      "icons": ["facebook.svg", "telegram.svg", "instagram.svg", "whatsapp.svg"]
+    },
+    "information": {
+      "heading": "Информация",
+      "list": ["Главная", "Курсы", "Новости", "О нас"]
+    },
+    "contact": {
+      "heading": "Контакты",
+      "list": [
+        {
+          "icon": "location.svg",
+          "name": "улица Рахими, 12, ориентир: Профсоюз"
+        },
+        {
+          "icon": "telephone.svg",
+          "name": "(+992) 558 700 900"
+        },
+        {
+          "icon": "email.svg",
+          "name": "info@softclub.tj"
+        }
+      ]
+    },
+    "copyright": [
+      "© All Copyright 2024 by Islomjon Saidaliev (SoftClub clone)",
+      "Terms & Condition / Privacy Policy"
+    ]
   }
 }

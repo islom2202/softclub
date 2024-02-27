@@ -1,0 +1,134 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.form-section{
+  padding-block: 5rem;
+  padding-inline: $mobile-inline;
+  @include flex(_, center);
+  &__form{
+    border-radius: 2rem;
+    padding: 4rem;
+    background-position: center;
+    background-size: 90% 20%;
+    background-repeat: no-repeat;
+    width: clamp(20rem, 100vw, 45rem);
+    &__heading {
+      margin-bottom: 3rem;
+    }
+    &__inputs {
+      @include grid(1fr);
+      gap: 1rem;
+      li {
+        @include grid();
+        .inputWrapper{
+            margin-bottom: 3rem;
+            padding-inline: 1.8rem;
+            height: 4rem;
+            border-radius: 10rem;
+            margin-top: 1rem;
+            background-color: $light-blue;
+            position: relative;
+            input{
+              position: absolute;
+              inset: 0;
+              border-radius: 10rem;
+              padding-inline: inherit;
+              z-index: 0;
+            }
+        }
+        .error{
+          span{
+              position: absolute;
+              bottom: -3.1rem;
+              right: 0;
+              z-index: 1;
+              color: $red;
+              font-size: clamp(1.2rem, 1vw, 1.4rem);
+            }
+        }
+      }
+    }
+    &__btn-policy{
+      @include flex(start);
+      flex-direction: column-reverse;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      p{
+        font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+        color: $gray;
+      }
+    }
+    &__marks{
+      list-style: disc;
+      @include grid();
+      gap: 1rem;
+      padding-top: 3rem;
+      margin-top: 3rem;
+      border-top: 1px solid $light-gray;
+      li{
+        @include flex();
+        gap: 1rem;
+        &::before{
+          content: "";
+          display: inline-block;
+          width: 1rem;
+          background-color: $light-gray;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+// tablet
+@include responsive($tablet){
+  .form-section{
+    &__form{
+      background-size: 70% 60%;
+      padding: 6rem;
+      width: clamp(20rem, 100vw, 100%);
+      &__inputs{
+        @include grid(1fr 1fr);
+       li .inputWrapper{
+          height: 4.6rem;
+        }
+      }
+      &__marks{
+        @include grid(1fr 1fr);
+      }
+    }
+  }
+}
+// desktop
+@include responsive($desktop) {
+  .form-section {
+    padding-inline: $desktop-inline;
+    &__form{
+      background-size: 60% 55%;
+      padding: 6rem 10rem;
+      &__heading{
+        text-align: center;
+      }
+      &__inputs{
+        @include grid(1fr 1fr 1fr);
+        padding-bottom: 3rem;
+      }
+      &__marks{
+        @include grid(1fr 1fr 1fr);
+        justify-items: center;
+        li:last-child{
+          grid-column: span 3;
+        }
+      }
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl) {
+  .form-section {
+    padding-inline: $desktop-inline-xl;
+  }
+}

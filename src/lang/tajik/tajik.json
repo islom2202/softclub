@@ -516,5 +516,71 @@
         "title": "Мудири фурӯш"
       }
     ]
+  },
+  "form": {
+    "heading": "Машварат гиред ё ба курс обуна шавед",
+    "inputs": [
+      {
+        "label": "Ном",
+        "placeholder": "Номи худро ворид кунед",
+        "type": "text",
+        "name": "name",
+        "invalid": "лутфан номи дурустро ворид кунед"
+      },
+      {
+        "label": "Рақами мобилӣ",
+        "placeholder": "Рақамро ворид кунед",
+        "type": "tel",
+        "name": "tel",
+        "invalid": "набояд аз 9 рақам камтар ё бештар бошад"
+      },
+      {
+        "label": "Почтаи электронӣ",
+        "placeholder": "example@example.com",
+        "type": "email",
+        "name": "email",
+        "invalid": "лутфан почтаи электрониро дуруст ворид намоед"
+      }
+    ],
+    "button": "Фиристодан",
+    "policy": "Бо пахш кардани тугма, шумо ба шартҳои Сиёсати ҳифзи асрор розӣ мешавед",
+    "footer": [
+      "Дархост гузоред",
+      "Аз 09:00 то 18:00 занг мезанем",
+      "Ба саволҳоятон ҷавоб медиҳем",
+      "Мо ба шумо дар интихоби курс кумак мекунем"
+    ]
+  },
+  "footer": {
+    "softclub": {
+      "image": "logo-white.png",
+      "description": "Барномасозиро бо беҳтарин устодони Тоҷикистон ва кишварҳои дигар омӯзед.",
+      "icons": ["facebook.svg", "telegram.svg", "instagram.svg", "whatsapp.svg"]
+    },
+    "information": {
+      "heading": "Маълумот",
+      "list": ["Асосӣ", "Курсҳо", "Хабарҳо", "Дар бораи мо"]
+    },
+    "contact": {
+      "heading": "Контакты",
+      "list": [
+        {
+          "icon": "location.svg",
+          "name": "кучаи Рахимй, 12, мавзеъ: Иттифоқи касаба"
+        },
+        {
+          "icon": "telephone.svg",
+          "name": "(+992) 558 700 900"
+        },
+        {
+          "icon": "email.svg",
+          "name": "info@softclub.tj"
+        }
+      ]
+    },
+    "copyright": [
+      "© All Copyright 2024 by Islomjon Saidaliev (SoftClub clone)",
+      "Terms & Condition / Privacy Policy"
+    ]
   }
 }

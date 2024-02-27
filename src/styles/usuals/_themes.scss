@@ -17,6 +17,13 @@
   .hero, .loader{
       background-color: $light-hero;
   }
+  // advantages, achievements, reviews, academy-news, comanies
+  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
+    background-color: $light-blue;
+    .form-section__form{
+      background-color: $light-hero;
+    }
+  }
 }
 
 
@@ -41,13 +48,13 @@
     background-color: $dark-hero;
     color: $light-hero;
   }
-  // advantages, achievements, reviews, academy-news, comanies
-  .advantages, .achievements, .reviews, .academy-news, .companies{
+  // advantages, achievements, reviews, academy-news, comanies, form
+  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
     background-color: $dark;
     filter: brightness(1.2);
     color: $absolute-white;
     small,p{color: $light-gray;}
-    .advantages__list__item, .academy-news__list__item{
+    .advantages__list__item, .academy-news__list__item, .form-section__form{
       background-color: $dark-blue;
     }
     .companies__list-wrapper::after{
@@ -55,6 +62,22 @@
     }
     .companies__list-wrapper::before{
       background: linear-gradient(to right, $dark, transparent);
+    }
+    .form-section__form{
+      input{
+        background-color: $dark-hero;
+        border: 1px solid $gray;
+        color: $light-gray;
+      }
+      &__marks{
+        border-top: 1px solid $gray;
+        li{
+          color: $light-gray;
+          &::before{
+            background-color: $gray;
+          }
+        }
+      }
     }
   }
 }

@@ -45,12 +45,9 @@
 @include responsive($tablet) {
   .companies {
     padding-inline: $desktop-inline;
-    &__list-wrapper {
-      &__list {
-        gap: 5rem;
-        padding-inline: 2.5rem;
-      }
-    }
+    &__heading {
+    margin-bottom: 5rem;
+  }
   }
 }
 // desktop xl

@@ -493,34 +493,6 @@
         "s-pay.svg"
       ]
     },
-    "form": {
-      "header": "Get a consultation or sign up for a course",
-      "name": {
-        "label": "Name",
-        "placeholder": "Enter your name"
-      }, 
-      "phone-number":{
-        "label": "Phone number",
-        "placeholder": "Enter number"
-      },
-      "email": {
-        "label": "e-mail",
-        "placeholder": "example@example.com"
-      },
-      "button": "send",
-      "policy": "By clicking the button, you agree to the terms of the Privacy Policy",
-      "footer": [
-        "Leave a request",
-        "We will call from 09:00 to 18:00",
-        "We will answer your questions",
-        "We will help you choose a course"
-      ]
-    },
-    "certificate": {
-      "name": "Softclub Certificate",
-      "description": "Will confirm that you have completed the course and help you find a job" ,
-      "button": "Certificate example"
-    },
     "teachers": {
       "heading":  "Our teachers are practicing specialists",
       "body": [
@@ -545,6 +517,86 @@
           "title": "Sales Manager"
         }
       ]
-    }
-    
+    },
+    "form": {
+      "heading": "Get a consultation or sign up for a course",
+      "inputs": [
+        {
+          "label": "Name",
+          "placeholder": "Enter your name",
+          "type": "text",
+          "name": "name",
+          "invalid": "enter a valid name"
+        }, 
+        {
+          "label": "Phone number",
+          "placeholder": "Enter number",
+          "type": "tel",
+          "name": "tel",
+          "invalid": "must not be less or more than 9 digits"
+        },
+        {
+          "label": "e-mail",
+          "placeholder": "example@example.com",
+          "type": "email",
+          "name": "email",
+          "invalid": "please enter a valid email address"
+        }
+      ],
+      "button": "Send",
+      "policy": "By clicking the button, you agree to the terms of the Privacy Policy",
+      "footer": [
+        "Leave a request",
+        "We will call from 09:00 to 18:00",
+        "We will answer your questions",
+        "We will help you choose a course"
+      ]
+    },
+    "certificate": {
+      "name": "Softclub Certificate",
+      "description": "Will confirm that you have completed the course and help you find a job" ,
+      "button": "Certificate example"
+    },
+    "footer": {
+      "softclub": {
+        "image": "logo-white.png",
+        "description": "Learn programming with the best instructors from Tajikistan and other countries.",
+        "icons": [
+          "facebook.svg",
+          "telegram.svg",
+          "instagram.svg",
+          "whatsapp.svg"
+        ]
+      },
+      "information":{
+        "heading": "Information",
+        "list": [
+          "Home",
+          "Courses",
+          "News",
+          "About us"
+        ]
+      },
+      "contact": {
+        "heading": "Contact",
+        "list": [
+          {
+            "icon": "location.svg",
+            "name": "Rahimi street 12, landmark: Trade Union"
+          },
+          {
+            "icon": "telephone.svg",
+            "name": "(+992) 558 700 900"
+          },
+          {
+            "icon": "email.svg",
+            "name": "info@softclub.tj"
+          }
+        ]
+      },
+      "copyright": [
+        "© All Copyright 2024 by Islomjon Saidaliev (SoftClub clone)",
+        "Terms & Condition / Privacy Policy"
+      ]
+    }  
 }

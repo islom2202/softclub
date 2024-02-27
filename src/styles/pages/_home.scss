@@ -91,6 +91,10 @@
         border-radius: 1.5rem;
         background-color: $dark-blue;
         color: $absolute-white;
+        transition: .4s;
+        &:hover{
+          transform: scale(.9)
+        }
         &__duration{
           @include flex(center);
           gap: .7rem;

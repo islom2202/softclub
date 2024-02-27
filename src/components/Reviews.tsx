@@ -11,7 +11,7 @@ const Reviews = () => {
       <h4 className="reviews__heading">{t("home.reviews.heading")}</h4>
       <ul className="reviews__list">
         {reviews.map((el) => (
-          <li className="reviews__list__item">
+          <li className="reviews__list__item" key={el.name}>
             <img src={getImageUrl(el.image)} alt={el.name} />
             <h5>{el.name}</h5>
             <p>{el.review}</p>

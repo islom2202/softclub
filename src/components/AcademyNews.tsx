@@ -9,7 +9,7 @@ const AcademyNews = ({likes, messagesList}:{likes:number, messagesList:number}) 
       <h4 className="academy-news__heading">{t("academy-news.heading")}</h4>
       <ul className="academy-news__list">
         {news.map((e) => (
-          <li className="academy-news__list__item">
+          <li className="academy-news__list__item" key={e.image1}>
             <div className="academy-news__list__item__imgWrapper">
               <div className="academy-news__list__item__imgWrapper__iconsWrapper">
                 <span className="material-symbols-rounded">

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next"
 import {getIconUrl} from "../utils/icons-utils.ts";
 // images and icons
 import homeHero from "../assets/images/home-hero.svg"
+import formBackground from "../assets/images/form-background.png"
 // components
 import { Hero } from "../components/Hero"
 import { Achievements } from "../components/Achievements.tsx";
@@ -13,6 +14,7 @@ import Reviews from "../components/Reviews.tsx";
 import AcademyNews from "../components/AcademyNews.tsx";
 import { Companies } from "../components/Companies.tsx";
 import Teachers from "../components/Teachers.tsx";
+import Form from "../components/Form.tsx";
 // typescript objects - states
 import { comments } from "../newsComments.ts";
 const Home = () => {
@@ -58,6 +60,7 @@ const Home = () => {
             <Link
               to={`/courses/${el.name}`}
               className="all-courses__body__course"
+              key={el.name}
             >
               <div>
                 <p
@@ -87,6 +90,8 @@ const Home = () => {
       <Companies />
       {/*Teachers*/}
       <Teachers />
+      {/*Form*/}
+      <Form formfooter={t("form.footer", {returnObjects: true})} background={formBackground}/>
     </div>
   )
 }

@@ -10,14 +10,14 @@ export const Companies = () => {
         {/*Doubled list just for css only slider*/}
         <ul className="companies__list-wrapper__list">
           {companies.map((e) => (
-            <li className="companies__list-wrapper__list__item">
+            <li className="companies__list-wrapper__list__item" key={e}>
               <img src={getIconUrl(e)} alt="e" />
             </li>
           ))}
         </ul>
         <ul className="companies__list-wrapper__list">
           {companies.map((e) => (
-            <li className="companies__list-wrapper__list__item">
+            <li className="companies__list-wrapper__list__item" key={e}>
               <img src={getIconUrl(e)} alt="e" />
             </li>
           ))}

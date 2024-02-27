@@ -9,7 +9,7 @@ const Teachers = () => {
       <h4>{t("teachers.heading")}</h4>
       <ul className="teachers__list">
         {teachers.map((e) => (
-          <li className="teachers__list__item">
+          <li className="teachers__list__item" key={e.name}>
             <img src={getImageUrl(e.image)} alt={e.name} />
             <h4>{e.name}</h4>
             <p>{e.title}</p>

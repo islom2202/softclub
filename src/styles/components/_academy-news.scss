@@ -17,11 +17,12 @@
     padding-bottom: 2rem;
     gap: 5rem;
     &__item{
-      border: .1rem solid;
       padding: 1rem 1rem 3rem 1rem;
       border-radius: 1rem;
       width: 100%;
       max-width: 40rem;
+      background-color: $absolute-white;
+      box-shadow: 1px 1px 2px 2px rgba(67, 67, 67, 0.09);
       &__imgWrapper {
         width: 100%;
         position: relative;

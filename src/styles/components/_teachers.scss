@@ -23,6 +23,10 @@
     &__item{
       @include flex();
       flex-direction: column;
+      transition: .4s;
+      &:hover{
+        filter:brightness(.9);
+      }
       img{
         width: 60%;
         aspect-ratio: 1/1;

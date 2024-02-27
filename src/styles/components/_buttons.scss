@@ -1,17 +1,34 @@
 @use "../usuals/colors" as *;
 @use "../usuals/mixins" as *;
+@use "../usuals/breakpoints" as *;
+
+// mobile
 .button{
   @include flex(center);
   gap: 1rem;
-  padding: 1.5rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 5rem;
   background-color: $blue-gray;
   color: $absolute-white;
-  font-weight: 700;
+  font-weight: 500;
   &--outlined{
     @extend .button;
     background-color: transparent;
     color: $blue-gray;
     border: 2px solid $blue-gray;
+  }
+}
+
+// tablet
+@include responsive($tablet){
+  .button{
+    padding: 1.4rem 2.5rem;
+  }
+}
+
+// desktop
+@include responsive($desktop){
+  .button{
+    padding: 1.5rem 3rem;
   }
 }

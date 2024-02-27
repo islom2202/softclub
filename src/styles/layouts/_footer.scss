@@ -1,0 +1,15 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+// mobile
+.footer{
+  padding-inline: $mobile-inline;
+  @include grid();
+  background-color: green;
+  &__softclub{}
+  &__information{}
+  &__constact{}
+}
+.copyright{
+  padding-inline: $mobile-inline;
+}
