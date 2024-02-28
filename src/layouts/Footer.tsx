@@ -36,7 +36,7 @@ export const Footer = () => {
           <h2>{t("footer.contact.heading")}</h2>
           <ul>
             {contactList.map((e) => (
-              <li>
+              <li key={e.name}>
                 <figure>
                   <img src={getIconUrl(e.icon)} alt={e.icon} />
                   <figcaption>{e.name}</figcaption>
@@ -49,7 +49,7 @@ export const Footer = () => {
       <footer className="copyright">
         <div>
           {copyright.map((e) => (
-            <li>{e}</li>
+            <li key={e}>{e}</li>
           ))}
         </div>
       </footer>
