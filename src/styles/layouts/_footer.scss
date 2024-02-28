@@ -4,12 +4,97 @@
 // mobile
 .footer{
   padding-inline: $mobile-inline;
+  padding-block: 10rem 8rem;
   @include grid();
-  background-color: green;
-  &__softclub{}
-  &__information{}
-  &__constact{}
+  gap: 3rem;
+  background-color: $dark-hero;
+  color: $absolute-white;
+  p,li,figcaption{
+     font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+  }
+  h2{
+    font-size: 2.4rem;
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
+    color: $light-gray;
+    margin-bottom: 1rem;
+  }
+  &__softclub{
+    max-width: 30rem;
+    @include grid();
+    gap: 3rem;
+    color: $light-gray;
+    &__logo{
+      width: 16.3rem;
+    }
+    &__icons{
+      @include flex();
+      gap: 2rem;
+      img{
+        width: 3rem;
+        width: clamp(2.5rem, 2.5vw, 3rem);
+      }
+    }
+  }
+  &__information ul{
+      @include grid();
+      gap: 1rem;
+  }
+  &__contact ul {
+    @include grid();
+    gap: 1rem;
+    figure{
+      @include flex();
+      gap: 2rem;
+      img{
+        width: 3rem;
+        width: clamp(2.5rem, 3vw, 3.2rem);
+      }
+    }
+  }
 }
 .copyright{
   padding-inline: $mobile-inline;
+  background-color: $dark-hero;
+  color: $light-gray;
+  div{
+    @include flex(center, space-between);
+    padding-block: 2rem 4rem;
+    border-top: 1px solid $gray;
+  }
+}
+
+// tablet
+@include responsive($tablet){
+  .footer{
+    @include grid(1.3fr 1fr 1fr);
+    h2{
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+// desktop
+@include responsive($desktop){
+  .footer{
+    padding-inline: $desktop-inline;
+    padding-block: 15rem 10rem;
+    @include grid(1.3fr 1fr 1fr);
+    gap: 10rem;
+    &__softclub{
+      max-width: 100%;
+    }
+}
+.copyright{
+  padding-inline: $desktop-inline;
+}
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .footer{
+    padding-inline: $desktop-inline-xl;
+  }
+  .copyright{
+    padding-inline: $desktop-inline-xl;
+  }
 }
