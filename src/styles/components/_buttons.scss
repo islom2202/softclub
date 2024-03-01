@@ -4,19 +4,56 @@
 
 // mobile
 .button{
+  border: 2px solid $blue-gray;
   @include flex(center);
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem 2rem;
   border-radius: 5rem;
-  background-color: $blue-gray;
-  color: $absolute-white;
   font-weight: 500;
+  transition: .5s;
+  span:first-child{
+    transform: translateX(-180%) scale(0);
+  }
+  span:nth-child(2){
+    transform: translate(-15%);
+  }
+  span:last-child{
+    transform: translateX(-100%);
+  }
+  &:hover{
+    animation: bounce .5s linear;
+    @keyframes bounce {
+      50%{
+        box-shadow: 2px 2px 5px 1px $blue;
+        transform: scale(1.01);
+      }
+    }
+    span:first-child{ 
+      transform: translateX(100%) scale(1);
+    }
+    span:nth-child(2){
+      transform: translate(15%);
+    }
+    span:last-child{
+      transform: translateX(160%) scale(0);
+    }
+  }
+  &--filled{
+    background-color: $blue-gray;
+    color: $absolute-white;
+    &:hover{
+      background-color: transparent;
+      color: $blue-gray;
+    }
+  }
   &--outlined{
-    @extend .button;
     background-color: transparent;
     color: $blue-gray;
-    border: 2px solid $blue-gray;
-  }
+    &:hover{
+      background-color: $blue-gray;
+      color: $absolute-white;
+    }
+  } 
 }
 
 // tablet

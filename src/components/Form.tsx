@@ -48,26 +48,31 @@ const Form = ({formfooter, background}:{formfooter:string[], background:string})
                     : ""
                 }`}
               >
+                {e.name == "tel" && (
+                  <span className="inputWrapper__telCode">(+992)</span>
+                )}
                 <input
                   type={e.type}
                   id={e.name}
                   placeholder={e.placeholder}
                   required
+                  className={`input-${e.name}`}
                 />
-                <span>{e.invalid}</span>
+                <span className="invalid">{e.invalid}</span>
               </div>
             </li>
           ))}
         </ul>
         <div className="form-section__form__btn-policy">
-          <button className="button" typeof="submit">
-            {t("form.button")}
+          <button className="button button--filled" typeof="submit">
+            <span className="material-symbols-rounded">arrow_right_alt</span>
+            <span>{t("form.button")}</span>
             <span className="material-symbols-rounded">arrow_right_alt</span>
           </button>
           <p>{t("form.policy")}</p>
         </div>
         <ul className="form-section__form__marks">
-          {formfooter.map((e) => (
+          {formfooter?.map((e) => (
             <li key={e}>{e}</li>
           ))}
         </ul>

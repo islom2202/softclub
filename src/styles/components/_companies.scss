@@ -31,12 +31,10 @@
       height: 100%;
       width: 15%;
       inset: 0 auto auto 0;
-      background: linear-gradient(to right, white, transparent);
       z-index: 1;
     }
     &::after{
       inset: 0 0 auto auto;
-      background: linear-gradient(to left, white, transparent);
     }
   }
 }

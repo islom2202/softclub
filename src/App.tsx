@@ -21,7 +21,7 @@ import { useState } from "react"
 
 function App() {
   // handle languages
-  const locLang:string = localStorage.getItem("language") || "";
+  const locLang = localStorage.getItem("language") || "";
   const [lang, setlang] = useState(locLang || "english")
   const { i18n } = useTranslation()
 

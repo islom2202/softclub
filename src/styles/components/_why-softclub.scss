@@ -1,0 +1,40 @@
+@use "../usuals/colors" as *;
+@use "../usuals/breakpoints" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.whySoftclub{
+  padding-inline: $mobile-inline;
+  padding-block: 4rem;
+  h4{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  ul{
+    @include grid();
+    gap: 2rem;
+    li{
+      @include flex();
+      gap: 2rem;
+    }
+  }
+}
+// tablet
+@include responsive($tablet){
+  .whySoftclub ul{
+      @include grid(1fr 1fr);
+    }
+  }
+
+// desktop
+@include responsive($desktop){
+  .whySoftclub{
+    padding-inline: $desktop-inline;
+  }
+}
+// desktop xl
+@include responsive($desktop-xl){
+  .whySoftclub{
+    padding-inline: $desktop-inline-xl;
+  }
+}

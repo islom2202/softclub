@@ -14,7 +14,7 @@
     }
   }
   // hero
-  .hero, .loader{
+  .hero, .loader, .whySoftclub{
       background-color: $light-hero;
   }
   // advantages, achievements, reviews, academy-news, comanies
@@ -22,6 +22,12 @@
     background-color: $light-blue;
     .form-section__form{
       background-color: $light-hero;
+    }
+    .companies__list-wrapper::after{
+      background: linear-gradient(to left, $light-blue, transparent);
+    }
+    .companies__list-wrapper::before{
+      background: linear-gradient(to right, $light-blue, transparent);
     }
   }
 }
@@ -44,7 +50,7 @@
     }
   }
   // hero
-  .hero, .loader{
+  .hero, .loader, .whySoftclub{
     background-color: $dark-hero;
     color: $light-hero;
   }

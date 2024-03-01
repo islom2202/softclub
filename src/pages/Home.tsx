@@ -1,5 +1,3 @@
-// router
-import { Link } from "react-router-dom";
 // 18next
 import { useTranslation } from "react-i18next"
 // image and icon utils
@@ -15,14 +13,14 @@ import AcademyNews from "../components/AcademyNews.tsx";
 import { Companies } from "../components/Companies.tsx";
 import Teachers from "../components/Teachers.tsx";
 import Form from "../components/Form.tsx";
+import AllCourses from "../components/AllCourses.tsx";
 // typescript objects - states
 import { comments } from "../newsComments.ts";
 const Home = () => {
   const { t } = useTranslation()
   // advantages t-data
   const advatages: { name: string, icon: string, description: string }[] = t("home.advantages.advantages-blocks", {returnObjects: true})
-  // courses t-data
-  const courses:any = t("all-courses.body", {returnObjects: true})
+  
   return (
     <div className="home">
       {/*Hero*/}
@@ -53,45 +51,21 @@ const Home = () => {
       {/*Reviews*/}
       <Reviews />
       {/*All courses*/}
-      <article className="all-courses">
-        <h4 className="all-courses__heading">{t("all-courses.heading")}</h4>
-        <nav className="all-courses__body">
-          {courses.map((el: any) => (
-            <Link
-              to={`/courses/${el.name}`}
-              className="all-courses__body__course"
-              key={el.name}
-            >
-              <div>
-                <p
-                  className="all-courses__body__course__duration"
-                  style={{ color: el.duration.color }}
-                >
-                  {el.duration.number} <small>{el.duration.indicator}</small>
-                </p>
-                <h4>{el.name}</h4>
-                <p className="all-courses__body__course__start">
-                  <span>{el.start.heading}</span>
-                  {el.start.body}
-                </p>
-              </div>
-              <img src={getIconUrl(el.image)} alt="" />
-            </Link>
-          ))}
-        </nav>
-        <button className="button button--outlined">
-          {t("all-courses.heading")}{" "}
-          <span className="material-symbols-outlined">arrow_right_alt</span>
-        </button>
-      </article>
+      <AllCourses button={true} description={false}/>
       {/*Academy news*/}
-      <AcademyNews likes={comments.likes} messagesList={comments.messagesList.length}/>
+      <AcademyNews
+        likes={comments.likes}
+        messagesList={comments.messagesList.length}
+      />
       {/*Companies*/}
       <Companies />
       {/*Teachers*/}
       <Teachers />
       {/*Form*/}
-      <Form formfooter={t("form.footer", {returnObjects: true})} background={formBackground}/>
+      <Form
+        formfooter={t("form.footer", { returnObjects: true })}
+        background={formBackground}
+      />
     </div>
   )
 }

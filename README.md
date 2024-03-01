@@ -4,6 +4,9 @@
 2. `Vite` - React new generation bundler
 3. `i18next` - for localization
 4. `Google materials` - for icons (check CDN links in html root file)
+### React-router-dom
+I have learned:
+ 1. useLocation(): - AllCourses component 
 
 ### i18next
    1. install it: **npm install react-i18next i18next --save**

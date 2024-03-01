@@ -80,6 +80,17 @@
         "name": "Academy courses",
         "description": "We guarantee you high quality lessons and the best instructors",
         "button":"Sign up for a course"
+      },
+      "why-softclub": {
+        "heading": "Why you should choose programming courses from Softclub:",
+        "list":[
+          "The training is conducted in English, Russian, and Tajik.",
+          "During the courses, you will work on real projects",
+          "We teach programming languages that are in demand both in Tajikistan and abroad.",
+          "Our teachers are practicing specialists",
+          "You will see the progress yourself - we have 5 days of training a week and an exam every Saturday",
+          "At the end of the course you will have a strong portfolio with which you can find a job"
+        ]
       }
     },
     "news": {
@@ -472,7 +483,7 @@
           "button": "Sign up"
         }
       ],
-      "viewAll": "View all  →",
+      "viewAll": "View all",
       "messages": {
         "heading": "Add commentary",
         "name": "Name *",
@@ -530,17 +541,17 @@
         }, 
         {
           "label": "Phone number",
-          "placeholder": "Enter number",
+          "placeholder": "",
           "type": "tel",
           "name": "tel",
-          "invalid": "must not be less or more than 9 digits"
+          "invalid": "invalid phone number"
         },
         {
           "label": "e-mail",
           "placeholder": "example@example.com",
           "type": "email",
           "name": "email",
-          "invalid": "please enter a valid email address"
+          "invalid": "invalid email address"
         }
       ],
       "button": "Send",

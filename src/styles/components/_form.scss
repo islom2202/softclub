@@ -17,7 +17,7 @@
     &__heading {
       margin-bottom: 3rem;
     }
-    &__inputs {
+    &__inputs{
       @include grid(1fr);
       gap: 1rem;
       li {
@@ -30,6 +30,20 @@
             margin-top: 1rem;
             background-color: $light-blue;
             position: relative;
+            // input-tel
+            &__telCode{
+              color: $gray;
+              font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+              font-weight: 500;
+              position: absolute;
+              top: 50%;
+              left: 1.8rem;
+              transform: translateY(-54.5%);
+              z-index: 2;
+            }
+            .input-tel{
+              padding-left: 7rem;
+            }
             input{
               position: absolute;
               inset: 0;
@@ -38,16 +52,16 @@
               z-index: 0;
             }
         }
-        .error{
-          span{
+        .error .invalid{
               position: absolute;
-              bottom: -3.1rem;
-              right: 0;
+              bottom: -2.2rem;
+              left: 0;
               z-index: 1;
               color: $red;
-              font-size: clamp(1.2rem, 1vw, 1.4rem);
-            }
-        }
+              font-size: clamp(1.3rem, 1vw, 1.4rem);
+              font-weight: 550;
+              white-space: nowrap;
+        } 
       }
     }
     &__btn-policy{

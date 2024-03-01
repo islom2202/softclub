@@ -6,9 +6,10 @@ export const Hero = ({routename, name, description, button, image, contentClass,
         <h3>{name}</h3>
         <p className="hero__content__description">{description}</p>
         {button && (
-          <button className="button">
-            {button}
-            <span className="material-symbols-rounded">arrow_forward</span>
+          <button className="button button--filled">
+              <span className="material-symbols-rounded">arrow_forward</span>
+              <span>{button}</span>
+              <span className="material-symbols-rounded">arrow_forward</span>
           </button>
         )}
       </div>

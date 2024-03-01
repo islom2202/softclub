@@ -30,7 +30,9 @@ const AcademyNews = ({likes, messagesList}:{likes:number, messagesList:number}) 
         ))}
       </ul>
       <Link to="" className="button button--outlined">
-        {t("academy-news.viewAll")}
+        <span className="material-symbols-rounded">arrow_forward</span>
+        <span>{t("academy-news.viewAll")}</span>
+        <span className="material-symbols-rounded">arrow_forward</span>
       </Link>
     </article>
   )

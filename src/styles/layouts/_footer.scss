@@ -57,7 +57,9 @@
   background-color: $dark-hero;
   color: $light-gray;
   div{
-    @include flex(center, space-between);
+    @include flex(start);
+    flex-direction: column;
+    gap: 2rem;
     padding-block: 2rem 4rem;
     border-top: 1px solid $gray;
   }
@@ -71,6 +73,12 @@
       margin-bottom: 3rem;
     }
   }
+  .copyright{
+  div{
+    @include flex(center, space-between);
+    flex-direction: row;
+  }
+}
 }
 
 // desktop

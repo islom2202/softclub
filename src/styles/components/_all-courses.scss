@@ -1,0 +1,120 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.all-courses{
+    padding-block: 9rem;
+    padding-inline: $mobile-inline;
+    background-color: $dark-hero;
+    @include flex();
+    flex-direction: column;
+    &:has(button) &__body__course img{
+      width: clamp(8rem, 25vw, 12rem);
+    }
+    &:not(:has(button)) &__body__course img{
+      min-width: 10rem;
+      width: 25vw;
+      max-width: 16rem;
+    }
+    &__heading{
+      margin-bottom: 5rem;
+      color: $absolute-white;
+    }
+    &__body{
+      @include grid(1fr);
+      width: 100%;
+      justify-items: center;
+      margin-bottom: 4rem;
+      gap: 2rem;
+      &__course{
+        @include flex(center, space-between);
+        width: clamp(20rem, 100%, 40rem);
+        padding: 3rem;
+        border-radius: 1.5rem;
+        background-color: $dark-blue;
+        color: $absolute-white;
+        transition: .4s;
+        &:hover{
+          transform: scale(.9)
+        }
+        &__duration{
+          @include flex(center);
+          gap: .7rem;
+          font-weight: 600;
+          font-size: clamp(1.7rem, 2vw, 2.4rem);
+        }
+        &__start{
+          @include flex();
+          gap: .8rem;
+          padding-top: 1.5rem;
+          span{
+            color: $light-gray
+          }
+        }
+        // for courses-page
+        &__description{
+          line-height: 120%;
+          font-size: 1.3rem;
+          margin-block: 1.1rem;
+        }
+        &__footer{
+          @include flex(center, space-between);
+          padding-block: 1rem;
+          border-top: 1px solid;
+          &__duration{
+            @include flex();
+            gap: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+}
+
+// tablet
+@include responsive($tablet){
+  .all-courses{
+   &:not(:has(button)) &__body{
+    @include grid(1fr);
+   }
+   &__body{
+    @include grid(1fr 1fr);
+   } 
+   &__body__course{
+    width: clamp(20rem, 100%, 60rem);
+   }
+  }
+}
+
+// desktop
+@include responsive($desktop){
+  // for home-page
+  .home{
+    .all-courses{
+    &__body{
+      @include grid(1fr 1fr 1fr);
+    }
+    &__body__course:last-child{
+      display: none;
+    }
+    }
+  }
+  // for courses-page
+  .all-courses{
+    padding-inline: $desktop-inline;
+    &:not(:has(button)) &__body{
+      @include grid(1fr 1fr);
+      &__course{
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .all-courses{
+    padding-inline: $desktop-inline-xl;
+  }
+}

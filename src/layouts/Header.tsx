@@ -1,30 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 // i18next hook
 import { useTranslation } from "react-i18next";
 // header icons
 export const Header = ({logo, children}:{logo:string, children:any}) => {
   //states
-  const [burger, setburger] = useState('menu')
+  const [burger, setburger] = useState("menu")
   const [hide, sethide] = useState("header--hide")
-  const [theme, settheme] = useState(true)
   // handle menu
   const handleMenu = () => {
-    setburger(burger == 'menu' ? 'cancel' : 'menu')
-    sethide(burger == 'cancel' ? "header--hide": "")
+    setburger(burger == "menu" ? "cancel" : "menu")
+    sethide(burger == "cancel" ? "header--hide" : "")
   }
+
   // handle theme
-  const handleTheme = (value:boolean) => {
-    let app = document.querySelector(".app")
+  const locTheme = localStorage.getItem("theme")
+  const [theme, settheme] = useState(locTheme == "dark" ? false : true)
+  const handleTheme = (value: boolean) => {
     settheme(value)
-    !value ? app?.classList.add('dark'): app?.classList.remove('dark') 
-  };
+    localStorage.setItem("theme", !value ? "dark" : "")
+  }
+  useEffect(() => {
+    let app = document.querySelector(".app")
+    if (!theme) {
+      app?.classList.add("dark")
+    } else {
+      app?.classList.remove("dark")
+    }
+  }, [theme])
+  
+  
   // i18n languages
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <header className="header">
       <aside className="header__aside">
-        <img src={logo} alt="logo" className="header__aside__logo" draggable="false"/>
+        <img
+          src={logo}
+          alt="logo"
+          className="header__aside__logo"
+          draggable="false"
+        />
         <span
           className="material-symbols-outlined header__aside__menu"
           onClick={() => handleMenu()}
@@ -62,4 +78,8 @@ export const Header = ({logo, children}:{logo:string, children:any}) => {
       </section>
     </header>
   )
-}
+};
+ 
+
+  
+
