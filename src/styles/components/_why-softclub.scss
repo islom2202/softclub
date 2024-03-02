@@ -21,10 +21,13 @@
 }
 // tablet
 @include responsive($tablet){
-  .whySoftclub ul{
+  .whySoftclub {
+    padding-bottom: 8rem;
+    ul{
       @include grid(1fr 1fr);
     }
   }
+}
 
 // desktop
 @include responsive($desktop){

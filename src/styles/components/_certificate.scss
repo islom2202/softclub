@@ -1,0 +1,49 @@
+@use "../usuals/colors" as *;
+@use "../usuals/breakpoints" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.certificate {
+  @include grid();
+  justify-items: center;
+  padding-inline: $mobile-inline;
+  padding-block: 4rem;
+  gap: 4rem;
+  &__content {
+    @include flex();
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    h2 {
+      color: $blue;
+    }
+  }
+  &__img {
+    width: clamp(25rem, 100%, 45.5rem);
+  }
+}
+// tablet
+@include responsive($tablet) {
+  .certificate {
+    @include grid(1fr 1fr);
+    align-items: center;
+    &__content {
+      align-items: start;
+      text-align: start;
+      gap: 2rem;
+    }
+  }
+}
+// desktop
+@include responsive($desktop) {
+  .certificate {
+    padding-inline: $desktop-inline;
+    padding-block: 8rem;
+  }
+}
+// desktop xl
+@include responsive($desktop-xl) {
+  .certificate {
+    padding-inline: $desktop-inline-xl;
+  }
+}

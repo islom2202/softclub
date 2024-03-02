@@ -43,6 +43,7 @@
 @include responsive($tablet) {
   .companies {
     padding-inline: $desktop-inline;
+    padding-block: 10rem;
     &__heading {
     margin-bottom: 5rem;
   }

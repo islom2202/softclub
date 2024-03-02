@@ -5,6 +5,9 @@ import { Hero } from "../components/Hero";
 import WhySoftclub from "../components/WhySoftclub";
 import AllCourses from "../components/AllCourses";
 import Form from "../components/Form";
+import Teachers from "../components/Teachers";
+import Certificate from "../components/Certificate";
+import { Companies } from "../components/Companies";
 // images
 import formBackground from "../assets/images/form-background.png"
 AllCourses
@@ -33,6 +36,12 @@ const Courses = () => {
         formfooter={t("form.footer", { returnObjects: true })}
         background={formBackground}
       />
+      {/*Teachers*/}
+      <Teachers />
+      {/*Certificate*/}
+      <Certificate />
+      {/*Companies*/}
+      <Companies />
     </div>
   )
 }

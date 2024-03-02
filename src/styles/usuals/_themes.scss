@@ -14,7 +14,7 @@
     }
   }
   // hero
-  .hero, .loader, .whySoftclub{
+  .hero, .loader, .whySoftclub, .certificate{
       background-color: $light-hero;
   }
   // advantages, achievements, reviews, academy-news, comanies
@@ -54,8 +54,8 @@
     background-color: $dark-hero;
     color: $light-hero;
   }
-  // advantages, achievements, reviews, academy-news, comanies, form
-  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
+  // advantages, achievements, reviews, academy-news, comanies, form, certificate
+  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section, .certificate{
     background-color: $dark;
     filter: brightness(1.2);
     color: $absolute-white;
