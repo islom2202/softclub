@@ -6,7 +6,7 @@
 4. `Google materials` - for icons (check CDN links in html root file)
 ### React-router-dom
 I have learned:
- 1. useLocation(): - AllCourses component 
+ 1. useLocation(): - App component 
 
 ### i18next
    1. install it: **npm install react-i18next i18next --save**
