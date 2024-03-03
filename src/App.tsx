@@ -1,8 +1,8 @@
-import React, { Suspense } from "react"
+import React, { Suspense, useEffect } from "react"
 // header icons
 import logo from "./assets/icons/logo.svg"
 // Routes
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation} from "react-router-dom"
 // Pages, Layouts & Components
 const Home = React.lazy(() => import("./pages/Home"))
 const Courses = React.lazy(() => import("./pages/Courses"))
@@ -30,9 +30,12 @@ function App() {
     localStorage.setItem("language", language)
     i18n.changeLanguage(language)
   }
-  
+  // Location scroll handle
+  const {pathname} = useLocation();
+  useEffect(() => {window.scrollTo(0, 0)}, [pathname])
   return (
     <div className="app">
+      {/*Header*/}
       <Header logo={logo}>
         <select
           className="header__switchers__languages"
@@ -46,6 +49,7 @@ function App() {
       </Header>
       <main>
         <Routes>
+          {/*Home*/}
           <Route
             index
             element={
@@ -54,6 +58,7 @@ function App() {
               </Suspense>
             }
           />
+          {/*Courses*/}
           <Route
             path="courses"
             element={
@@ -62,7 +67,9 @@ function App() {
               </Suspense>
             }
           />
-          <Route path="courses/:courseName" Component={Course} />
+          {/*Course*/}
+          <Route path="courses/:course" Component={Course} />
+          {/*Newss*/}
           <Route
             path="news"
             element={
@@ -71,6 +78,7 @@ function App() {
               </Suspense>
             }
           />
+          {/*About*/}
           <Route
             path="about"
             element={
@@ -79,6 +87,7 @@ function App() {
               </Suspense>
             }
           />
+          {/*Contacts*/}
           <Route
             path="contacts"
             element={
@@ -87,9 +96,11 @@ function App() {
               </Suspense>
             }
           />
+          {/*No Match*/}
           <Route path="*" Component={NoMatch} />
         </Routes>
       </main>
+      {/*Footer*/}
       <Footer />
     </div>
   )

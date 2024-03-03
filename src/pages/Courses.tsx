@@ -1,5 +1,5 @@
-import image from "../assets/images/courses-hero.png";
 import { useTranslation } from "react-i18next"
+import image from "../assets/images/courses-hero.png"
 // components
 import { Hero } from "../components/Hero";
 import WhySoftclub from "../components/WhySoftclub";

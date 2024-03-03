@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom"
+import { Link, useNavigate} from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { getIconUrl } from "../utils/icons-utils";
 const AllCourses = ({button, description}:{button?:boolean, description:boolean}) => {
@@ -8,16 +7,13 @@ const AllCourses = ({button, description}:{button?:boolean, description:boolean}
   const courses: any = t("all-courses.body", { returnObjects: true })
   // navigate , useLocation
   const navigate = useNavigate();
-  const {pathname} = useLocation();
-  useEffect(()=> {window.scrollTo(0, 0)}, [pathname])
-  
   return (
     <article className="all-courses">
       <h4 className="all-courses__heading">{t("all-courses.heading")}</h4>
       <nav className="all-courses__body">
         {courses.map((el: any) => (
           <Link
-            to={`/courses/${el.name}`}
+            to={`/courses/${el.id}`}
             className="all-courses__body__course"
             key={el.name}
             style={{ backgroundColor: `${el.duration.color}1A` }}

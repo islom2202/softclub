@@ -3,91 +3,94 @@
 @use "../usuals/mixins" as *;
 @use "../usuals/measures" as *;
 // mobile
-.hero{
+.hero {
   @include grid();
   justify-items: center;
+  align-items: center;
   padding-inline: $mobile-inline;
   padding-bottom: 5rem;
   min-height: map-get($hero-height, mobile);
-  &__content{
+  &__content {
     order: 1;
     @include flex();
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    &__route-name{
+    &__route-name {
       display: none;
     }
   }
-  &__contentClass{
-    h3{
+  &__contentClass {
+    h3 {
       font-size: clamp(2.4rem, 5vw, 5rem);
     }
   }
-  &__img, &__map{
+  &__img,
+  &__map {
     width: 100%;
     height: 100%;
     max-width: 50rem;
     object-fit: contain;
   }
-  &__map{
+  &__map {
     display: flex;
     align-items: center;
     & * {
       border-radius: 2rem;
       height: clamp(25rem, 30vw, 40rem);
-      width: 100%
+      width: 100%;
     }
   }
 }
 // tablet
-@include responsive($tablet){
-  .hero{
+@include responsive($tablet) {
+  .hero {
     @include grid(1fr 1fr);
     min-height: map-get($hero-height, tablet);
-    &__content{
+    &__content {
       order: 0;
       @include flex(start);
       text-align: start;
       padding-block: 7rem;
       width: 100%;
-      &__route-name{
+      &__route-name {
         display: flex;
         color: $route-name;
         font-weight: 600;
         padding-bottom: 3rem;
         font-size: 1.6rem;
       }
-      &__description{
+      &__description {
         padding-bottom: 2rem;
       }
     }
-    &__map *{
+    &__map * {
       height: 60%;
     }
   }
 }
 // desktop
-@include responsive($desktop){
-  .hero{
+@include responsive($desktop) {
+  .hero {
     padding-inline: $desktop-inline;
     min-height: map-get($hero-height, desktop);
-    &__contentClass{
-      h3{
+    &__contentClass {
+      h3 {
         padding-right: 50%;
       }
     }
-    &__img, &__map{
+    &__img,
+    &__map {
       max-width: 55rem;
     }
-    &__map *{
+    &__map * {
       height: clamp(25rem, 30vw, 40rem);
     }
   }
 }
 // desktop xl
-@include responsive($desktop-xl){
-  .hero{
+@include responsive($desktop-xl) {
+  .hero {
     padding-inline: $desktop-inline-xl;
   }
 }

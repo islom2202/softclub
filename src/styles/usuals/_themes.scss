@@ -14,8 +14,11 @@
     }
   }
   // hero
-  .hero, .loader, .whySoftclub, .certificate{
+  .hero, .loader, .whySoftclub, .certificate, .marks, .details{
       background-color: $light-hero;
+      .details__box{
+        background-color: $light-blue;
+      }
   }
   // advantages, achievements, reviews, academy-news, comanies
   .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
@@ -50,9 +53,14 @@
     }
   }
   // hero
-  .hero, .loader, .whySoftclub{
+  .hero, .loader, .whySoftclub, .marks, .details{
     background-color: $dark-hero;
-    color: $light-hero;
+    *{
+      color: $light-hero;
+    }
+    .details__box{
+        background-color: $dark-blue;
+    }
   }
   // advantages, achievements, reviews, academy-news, comanies, form, certificate
   .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section, .certificate{

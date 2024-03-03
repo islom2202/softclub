@@ -114,6 +114,7 @@
       "heading": "All Courses",
       "body": [
         {
+          "id": 1,
           "image": "olympiad.svg",
           "name": "Olympiad",
           "start": {
@@ -127,7 +128,7 @@
           },
           "description": "Preparatory course for the Olympiad. The course is taught in the C++ programming language as it is considered the fastest language.",
           "details": {
-            "detaisls-heading": "Preparatory course for the Olympiad. The course is taught in the C++ programming language as it is considered the fastest language.",
+            "details-heading": "Preparatory course for the Olympiad. The course is taught in the C++ programming language as it is considered the fastest language.",
             "details-body": {
               "info": {
                 "info-heading": "Why the Olympics?",
@@ -154,6 +155,7 @@
           }
         },
         {
+          "id": 2,
           "image": "react.svg",
           "name": "React",
           "start": {
@@ -167,7 +169,7 @@
           },
           "description": "Build components, develop powerful web applications, and become a confident developer in the world of web technologies!",
           "details": {
-            "detaisls-heading": "Build components, develop powerful web applications, and become a confident developer in the world of web technologies!",
+            "details-heading": "Build components, develop powerful web applications, and become a confident developer in the world of web technologies!",
             "details-body": {
               "info": {
                 "info-body": [
@@ -181,6 +183,7 @@
           }
         },
         {
+          "id": 3,
           "image": "javascript.svg",
           "name": "Javascript",
           "start": {
@@ -194,7 +197,7 @@
           },
           "description": "You will not only master programming, but also learn how to turn your creative ideas into interactive web applications.",
           "details": {
-            "detaisls-heading": "You will not only master programming, but also learn how to turn your creative ideas into interactive web applications.",
+            "details-heading": "You will not only master programming, but also learn how to turn your creative ideas into interactive web applications.",
             "details-body": {
               "info": {
                 "info-body": [
@@ -205,6 +208,7 @@
           }
         },
         {
+          "id": 4,
           "image": "ui-ux.png",
           "name": "UX/UI design",
           "start": {
@@ -218,7 +222,7 @@
           },
           "description": "Learn what an interface is and how to evaluate its quality. Master Figma basics and visual design skills.",
           "details": {
-            "detaisls-heading": "Learn what an interface is and how to evaluate its quality. Master Figma basics and visual design skills.",
+            "details-heading": "Learn what an interface is and how to evaluate its quality. Master Figma basics and visual design skills.",
             "details-body": {
               "info": {
                 "info-heading": "Who is a UX/UI designer?",
@@ -247,6 +251,7 @@
           }
         },
         {
+          "id": 5,
           "image": "python.svg",
           "name": "Python",
           "start": {
@@ -260,7 +265,7 @@
           },
           "description": "Combine simplicity with power to create elegant code for web applications, data analytics, and artificial intelligence.",
           "details": {
-            "detaisls-heading": "Combine simplicity with power to create elegant code for web applications, data analytics, and artificial intelligence.",
+            "details-heading": "Combine simplicity with power to create elegant code for web applications, data analytics, and artificial intelligence.",
             "details-body": {
               "info": {
                 "info-heading": "",
@@ -298,6 +303,7 @@
           }
         },
         {
+          "id": 6,
           "image": "dot-net.svg",
           "name": ".Net",
           "start": {
@@ -311,19 +317,20 @@
           },
           "description": "Dive into the world of technology where you will aspects of C#, ASP.NET and Entity Framework to create amazing solutions.",
           "details": {
-            "detaisls-heading": "Dive into the world of technology where you will aspects of C#, ASP.NET and Entity Framework to create amazing solutions.",
+            "details-heading": "Dive into the world of technology where you will aspects of C#, ASP.NET and Entity Framework to create amazing solutions.",
             "details-body": {
               "info": {
                 "info-heading": "",
                 "info-body": [
                   "Our course provides comprehensive training on modern tools and technologies in the field of .NET development. Students will gain in-depth knowledge of the C# programming language while diving into key .NET components such as Entity Framework Core (EF Core) and Language Integrated Query (LINQ). During the training, the emphasis is on practical experience gained through real-life projects, promoting effective learning of the material."
-                ],
-                "conclusion": "The course also includes an in-depth look at working with databases, with a focus on interacting with PostgreSQL through Entity Framework Core. Students will learn advanced backend development methodologies while applying their skills in creating robust and efficient web applications using ASP.NET. At the end of the course, graduates will be prepared for a successful career in backend application development, having a deep understanding of .NET technologies and the ability to apply them in practical problems."
-              }
+                ]
+              },
+              "conclusion": "The course also includes an in-depth look at working with databases, with a focus on interacting with PostgreSQL through Entity Framework Core. Students will learn advanced backend development methodologies while applying their skills in creating robust and efficient web applications using ASP.NET. At the end of the course, graduates will be prepared for a successful career in backend application development, having a deep understanding of .NET technologies and the ability to apply them in practical problems."
             }
           }
         },
         {
+          "id": 7,
           "image": "html-css.svg",
           "name": "HTML CSS",
           "start": {
@@ -337,7 +344,7 @@
           },
           "description": "HTML and CSS are two fundamental technologies used to create web pages. Learn to create websites from scratch and hone your skills.",
           "details": {
-            "detaisls-heading": "HTML and CSS are two fundamental technologies used to create web pages. Learn to create websites from scratch and hone your skills.",
+            "details-heading": "HTML and CSS are two fundamental technologies used to create web pages. Learn to create websites from scratch and hone your skills.",
             "details-body": {
               "info": {
                 "info-heading": "",
@@ -349,6 +356,7 @@
           }
         },
         {
+          "id": 8,
           "image": "cpp.svg",
           "name": "C++",
           "start": {
@@ -362,7 +370,7 @@
           },
           "description": "Your first step into the world of programming, where you'll learn the basics of C++ with hands-on exercises and professional guidance.",
           "details": {
-            "detaisls-heading": "Your first step into the world of programming, where you'll learn the basics of C++ with hands-on exercises and professional guidance.",
+            "details-heading": "Your first step into the world of programming, where you'll learn the basics of C++ with hands-on exercises and professional guidance.",
             "details-body": {
               "info": {
                 "info-heading": "",
@@ -374,6 +382,7 @@
           }
         },
         {
+          "id": 9,
           "image": "c-sharp.svg",
           "name": "C#",
           "start": {
@@ -387,21 +396,18 @@
           },
           "description": "We start learning backend development with the basics of C# and the .NET framework and gradually move on to more complex algorithms.",
           "details": {
-            "detaisls-heading": "We start learning backend development with the basics of C# and the .NET framework and gradually move on to more complex algorithms.",
+            "details-heading": "We start learning backend development with the basics of C# and the .NET framework and gradually move on to more complex algorithms.",
             "details-body": {
               "info": {
                 "info-heading": "We study a popular language from Microsoft.",
                 "info-body": [
-                  "C# (pronounced C Sharp) is a programming language from Microsoft. Initially, it was created for projects under Windows, but now it is a truly universal language: games, desktop applications, web services, neural networks, and even graphics for metaverses are written in it."
+                  "C# (pronounced C Sharp) is a programming language from Microsoft. Initially, it was created for projects under Windows, but now it is a truly universal language: games, desktop applications, web services, neural networks, and even graphics for metaverses are written in it.",
+                  "C# is the fifth most popular programming language in the world. It is used by banks, digital agencies, communication providers and large IT companies. Here's what Russian and foreign corporations write in C#:"
                 ]
               },
               "list": {
                 "list-heading": "",
                 "list-body": [
-                  {
-                    "item-name": "",
-                    "item-description": "C# is the fifth most popular programming language in the world. It is used by banks, digital agencies, communication providers and large IT companies. Here's what Russian and foreign corporations write in C#:"
-                  },
                   {
                     "item-name": "",
                     "item-description": "Microsoft - applications for Windows and Xbox."
@@ -432,6 +438,7 @@
           }
         },
         {
+          "id": 10,
           "image": "scratch.svg",
           "name": "Kids",
           "start": {
@@ -445,18 +452,37 @@
           },
           "description": "An exciting programming course for kids! From coding puzzles to creative projects using the Scratch programming language, where imagination meets innovation!",
           "details": {
-            "detaisls-heading": "An exciting programming course for kids! From coding puzzles to creative projects using the Scratch programming language, where imagination meets innovation!",
+            "details-heading": "An exciting programming course for kids! From coding puzzles to creative projects using the Scratch programming language, where imagination meets innovation!",
             "details-body": {
               "info": {
                 "info-heading": "",
                 "info-body": [
                   "Welcome to the fascinating world of Scratch programming language! In this scratch learning class, you will learn about the unique characteristics and abilities of this distinctive language. This course is designed to guide you towards mastering more complex scratch bases and techniques, so that you can implement your projects with this creative language."
-                ],
-                "conclusion": "During this educational adventure, you will learn the basic principles of Scratch programming and with practical exercises, you will improve your ability to write amazing code in this language. This course aims to turn you into an experienced scratch programmer, where each line of your code creates a compelling and actionable story. Join us to explore the exciting and creative world of scratch and become known as an artist in the programming world of this language"
-              }
+                ]
+              },
+              "conclusion": "During this educational adventure, you will learn the basic principles of Scratch programming and with practical exercises, you will improve your ability to write amazing code in this language. This course aims to turn you into an experienced scratch programmer, where each line of your code creates a compelling and actionable story. Join us to explore the exciting and creative world of scratch and become known as an artist in the programming world of this language"
             }
           }
         }
+      ],
+      "button": "Sign up for a course",
+      "course-marks": [
+        {
+          "icon": "calendar_month",
+          "content": "Start 12 feb"
+        },
+        {
+          "icon": "groups",
+          "content": "Group by 12 persons"
+        },
+        {
+          "icon": "event_note",
+          "content": "6 lessons per week"
+        },
+        {
+          "icon": "workspace_premium",
+          "content": "Certificate of completion"
+        }  
       ]
     },
     "academy-news": {

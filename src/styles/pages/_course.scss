@@ -1,0 +1,92 @@
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.course{
+  // marks
+  .marks{
+    @include grid();
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: $mobile-inline;
+    li{
+      @include flex();
+      gap: 1rem;
+    }
+  }
+  // details
+  .details{
+    padding-inline: $mobile-inline;
+    &__box{
+      width: 100%;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      @include flex(start);
+      flex-direction: column;
+      gap: 1.5rem;
+      h5{
+        margin-bottom: 1rem;
+      }
+      &__info p{
+        margin-bottom: 1rem;
+      }
+      &__list{
+        li{
+          margin-bottom: 1rem;
+          mark{
+            background-color: transparent;
+            font-weight: 550;
+            display: inline;
+          }
+          p{
+            display: inline;
+          }
+        }       
+      }
+    }
+  }
+}
+
+// tablet
+@include responsive($tablet){
+  .course{
+    .marks{
+      @include grid(1fr 1fr);
+    }
+    .details{
+      padding-block: 5rem;
+      &__box{
+        padding: 5rem 4rem;
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+// desktop
+@include responsive($desktop){
+  .course{
+    .marks{
+      @include grid(1fr 1fr 1fr 1fr);
+      padding-inline: $desktop-inline;
+    };
+    .details{
+      padding-inline: $desktop-inline;
+      padding-block: 10rem;
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .course{
+    .marks{
+      padding-inline: $desktop-inline-xl;
+    }
+    .details{
+      padding-inline: $desktop-inline-xl;
+    }
+  }
+}
