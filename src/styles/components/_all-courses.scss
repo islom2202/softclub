@@ -2,8 +2,9 @@
 @use "../usuals/colors" as *;
 @use "../usuals/mixins" as *;
 
-// mobile
-.all-courses{
+
+// x-mobile
+  .all-courses{
     padding-block: 9rem;
     padding-inline: $mobile-inline;
     background-color: $dark-hero;
@@ -29,6 +30,9 @@
       gap: 2rem;
       &__course{
         @include flex(center, space-between);
+        &:has(&__description){
+          flex-direction: column-reverse;
+        }
         width: clamp(20rem, 100%, 40rem);
         padding: 3rem;
         border-radius: 1.5rem;
@@ -70,6 +74,15 @@
         }
       }
     }
+}
+
+// mobile
+@include responsive($mobile){
+  .all-courses__body__course{
+    &:has(&__description){
+      flex-direction: row;
+    }
+  }
 }
 
 // tablet

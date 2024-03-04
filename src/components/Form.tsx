@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-const Form = ({formfooter, background}:{formfooter:string[], background:string}) => {
+const Form = ({formfooter, background, isCourse}:{formfooter?:string[], background:string, isCourse?:boolean}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
@@ -24,16 +24,38 @@ const Form = ({formfooter, background}:{formfooter:string[], background:string})
     }
   }
   return (
-    <div className="form-section">
+    <div
+      className="form-section"
+      style={{
+        backgroundColor: `${isCourse && "#0F172A"}`,
+        padding: `${isCourse && 0}`,
+      }}
+    >
       <form
         className="form-section__form"
         style={{
           backgroundImage: `url(${background})`,
+          padding: `${isCourse && "4rem 10%"}`,
+          backgroundSize: `${isCourse && "40%"}`,
+          backgroundPosition: `${isCourse && "center"}`,
+          backgroundColor: `${isCourse && "#142136"}`,
+          color: `${isCourse && "white"}`,
         }}
         onSubmit={(e) => checkValidity(e)}
       >
-        <h4 className="form-section__form__heading">{t("form.heading")}</h4>
-        <ul className="form-section__form__inputs">
+        <h4
+          className="form-section__form__heading"
+          style={{
+            textAlign: `${isCourse ? "left" : "center"}`,
+            fontSize: `${isCourse && "clamp(1.6rem, 1.5vw, 1.9rem)"}`
+          }}
+        >
+          {t("form.heading")}
+        </h4>
+        <ul
+          className="form-section__form__inputs"
+          style={{ gridTemplateColumns: `${isCourse && "1fr"}` }}
+        >
           {inputs.map((e) => (
             <li key={e.name}>
               <label htmlFor={e.name}>{e.label}</label>
@@ -57,6 +79,7 @@ const Form = ({formfooter, background}:{formfooter:string[], background:string})
                   placeholder={e.placeholder}
                   required
                   className={`input-${e.name}`}
+                  style={{ backgroundColor: `${isCourse && "#0F172A"}` }}
                 />
                 <span className="invalid">{e.invalid}</span>
               </div>

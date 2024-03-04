@@ -16,6 +16,7 @@
   }
   span:nth-child(2){
     transform: translate(-15%);
+    min-width: fit-content;
   }
   span:last-child{
     transform: translateX(-100%);

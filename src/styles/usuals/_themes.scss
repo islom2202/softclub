@@ -64,7 +64,7 @@
   }
   // advantages, achievements, reviews, academy-news, comanies, form, certificate
   .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section, .certificate{
-    background-color: $dark;
+    background-color: $dark-hero;
     filter: brightness(1.2);
     color: $absolute-white;
     small,p{color: $light-gray;}

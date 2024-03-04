@@ -152,12 +152,39 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "800 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "1 Month"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
           "id": 2,
           "image": "react.svg",
           "name": "React",
+          "cost": {
+            "heading": "Cost of education",
+            "content": "1500 som / mon"
+          },
           "start": {
             "heading": "Start:",
             "body": "12 February"
@@ -180,6 +207,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "2 Months"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -205,6 +255,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "2 Months"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -248,6 +321,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "2 Months"
+            },
+            "places": {
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format": {
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -300,6 +396,29 @@
               },
               "conclusion": "Throughout the program, you’ll engage in applied learning through hands-on activities to help level up your knowledge. At the end of each sections, you’ll create different projects that will help prepare you for the next steps in your engineer career journey. At the end of the program, there will be a real life project where you will bring all of your knowledge together to create a Django web app."
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "3 Months"
+            },
+            "places": {
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format": {
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -327,6 +446,29 @@
               },
               "conclusion": "The course also includes an in-depth look at working with databases, with a focus on interacting with PostgreSQL through Entity Framework Core. Students will learn advanced backend development methodologies while applying their skills in creating robust and efficient web applications using ASP.NET. At the end of the course, graduates will be prepared for a successful career in backend application development, having a deep understanding of .NET technologies and the ability to apply them in practical problems."
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "2 Months"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -353,6 +495,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1000 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "1 Month"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -379,6 +544,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1000 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "1 Month"
+            },
+            "places": {
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format": {
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -435,6 +623,29 @@
                 ]
               }
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "1500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "2 Months"
+            },
+            "places": {
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format": {
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         },
         {
@@ -462,6 +673,29 @@
               },
               "conclusion": "During this educational adventure, you will learn the basic principles of Scratch programming and with practical exercises, you will improve your ability to write amazing code in this language. This course aims to turn you into an experienced scratch programmer, where each line of your code creates a compelling and actionable story. Join us to explore the exciting and creative world of scratch and become known as an artist in the programming world of this language"
             }
+          },
+          "forForm": {
+            "cost": {
+              "heading": "Cost of education",
+              "content": "500 som / mon"
+            },
+            "duration": {
+              "heading": "Duration",
+              "content": "5 Months"
+            },
+            "places":{
+              "heading": "Left",
+              "content": "12 places"
+            },
+            "format":{
+              "heading": "Training format",
+              "content": "Offline"
+            },
+            "marks": [
+              "Leave a request",
+              "We will call from 09:00 to 18:00",
+              "We will answer your questions"
+            ]
           }
         }
       ],

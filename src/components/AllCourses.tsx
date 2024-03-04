@@ -29,7 +29,7 @@ const AllCourses = ({button, description}:{button?:boolean, description:boolean}
                 </p>
               )}
               <h4>{el.name}</h4>
-              {/*Description only if allowed (courses page)*/}
+              {/*Description only if exists in props (courses page)*/}
               {description && (
                 <p className="all-courses__body__course__description">
                   {el.description.slice(0, 100)} . . .

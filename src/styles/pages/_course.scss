@@ -3,89 +3,180 @@
 @use "../usuals/mixins" as *;
 
 // mobile
-.course{
+.course {
   // marks
-  .marks{
+  .marks {
     @include grid();
     justify-content: center;
     gap: 2rem;
     padding-bottom: 4rem;
     padding-inline: $mobile-inline;
-    li{
+    li {
       @include flex();
       gap: 1rem;
     }
   }
   // details
-  .details{
+  .details {
     padding-inline: $mobile-inline;
-    &__box{
+    &__box {
       width: 100%;
       padding: 2rem;
       border-radius: 1.5rem;
       @include flex(start);
       flex-direction: column;
       gap: 1.5rem;
-      h5{
+      h5 {
         margin-bottom: 1rem;
       }
-      &__info p{
+      &__info p {
         margin-bottom: 1rem;
       }
-      &__list{
-        li{
+      &__list {
+        li {
           margin-bottom: 1rem;
-          mark{
+          mark {
             background-color: transparent;
             font-weight: 550;
             display: inline;
           }
-          p{
+          p {
             display: inline;
           }
-        }       
+        }
       }
+    }
+  }
+  // info & form
+  .info-form {
+    @include grid();
+    align-items: center;
+    gap: 5rem;
+    padding-inline: $mobile-inline;
+    padding-block: 5rem;
+    background-color: $dark-hero;
+    color: $absolute-white;
+    * {
+      width: 100%;
+    } // just to make form component not to cause overflow
+    &__info {
+      h3 {
+        @include flex();
+        gap: 2rem;
+        font-weight: 550;
+        color: $light-blue;
+        font-size: clamp(1.6rem, 5vw, 4rem);
+        span {
+          font-weight: 300;
+          font-size: clamp(1.4rem, 4vw, 2.8rem);
+          color: $blue;
+        }
+      }
+      &__infosmarks {
+        @include flex();
+        gap: 2rem;
+        padding-block: 2rem;
+        margin-block: 2rem;
+        border-block: 1px solid rgba(128, 128, 128, 0.436);
+        opacity: 0.8;
+        li {
+          @include grid();
+          gap: 0.5rem;
+          color: $light-gray;
+          font-size: clamp(1.1rem, 2vw, 1.7rem);
+          min-width: fit-content;
+          span {
+            color: $absolute-white;
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            font-weight: 500;
+          }
+        }
+      }
+      &__formsmarks {
+        @include grid();
+        gap: 1rem;
+        li {
+          @include flex();
+          gap: 1rem;
+          font-size: clamp(1.1rem, 2vw, 1.7rem);
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 1rem;
+            background-color: $light-gray;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    input {
+      color: $gray;
     }
   }
 }
 
 // tablet
-@include responsive($tablet){
-  .course{
-    .marks{
+@include responsive($tablet) {
+  .course {
+    // marks
+    .marks {
       @include grid(1fr 1fr);
     }
-    .details{
+    // details
+    .details {
       padding-block: 5rem;
-      &__box{
+      &__box {
         padding: 5rem 4rem;
         gap: 3rem;
       }
+    }
+    // info & form
+    .info-form {
+      @include grid(1fr 1fr);
     }
   }
 }
 
 // desktop
-@include responsive($desktop){
-  .course{
-    .marks{
+@include responsive($desktop) {
+  .course {
+    .marks {
       @include grid(1fr 1fr 1fr 1fr);
       padding-inline: $desktop-inline;
-    };
-    .details{
+    }
+    .details {
       padding-inline: $desktop-inline;
       padding-block: 10rem;
+    }
+    .info-form {
+      padding-inline: $desktop-inline;
+      padding-block: 10rem;
+      h3 {
+        padding-bottom: 5rem;
+      }
+      &__info__infosmarks {
+        gap: 5rem;
+        padding-block: 2.5rem;
+        margin-block: 3.5rem;
+        li {
+          max-width: fit-content;
+        }
+      }
     }
   }
 }
 
 // desktop xl
-@include responsive($desktop-xl){
-  .course{
-    .marks{
+@include responsive($desktop-xl) {
+  .course {
+    .marks {
       padding-inline: $desktop-inline-xl;
     }
-    .details{
+    .details {
+      padding-inline: $desktop-inline-xl;
+    }
+    .info-form {
       padding-inline: $desktop-inline-xl;
     }
   }

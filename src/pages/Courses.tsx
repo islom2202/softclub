@@ -13,6 +13,7 @@ import formBackground from "../assets/images/form-background.png"
 AllCourses
 const Courses = () => {
   const {t} = useTranslation()
+  const formfooter:string[] = t("form.footer", { returnObjects: true })
   return (
     <div className="courses">
       {/*Hero*/}
@@ -33,7 +34,7 @@ const Courses = () => {
       <AllCourses description={true} />
       {/*Form*/}
       <Form
-        formfooter={t("form.footer", { returnObjects: true })}
+        formfooter={formfooter}
         background={formBackground}
       />
       {/*Teachers*/}
