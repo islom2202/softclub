@@ -47,6 +47,60 @@
       }
     }
   }
+  // methods
+  .methods{
+    padding-inline: $mobile-inline;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    overflow-x: hidden;
+    &__heading{
+      @include flex(center, space-between);
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      h4{
+        font-weight: 500;
+      }
+      &__arrows{
+        @include flex();
+        gap: 1rem;
+        span{
+          border-radius: 50%;
+          user-select: none;
+          cursor: pointer;
+        }
+      }
+    }
+    &__list{
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      @include grid(repeat(4, 100%));
+      grid-auto-flow: column;
+      overflow-x: scroll;
+      scrollbar-track-color: transparent;
+      scrollbar-color: transparent;
+      padding-block: 1rem 2rem;
+      user-select: none;
+      li{
+        @include flex(start);
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 2rem;
+        margin-inline: $mobile-inline;
+        border-radius: 1rem;
+        mark{
+          @include flex(center, center);
+          width: clamp(4rem, 4vw, 5.5rem);
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          font-weight: 700;
+          color: $blue;
+          background-color: $dark-hero
+        }
+      }
+    }
+  }
   // info & form
   .info-form {
     @include grid();
@@ -114,6 +168,7 @@
       color: $gray;
     }
   }
+  
 }
 
 // tablet
@@ -135,6 +190,20 @@
     .info-form {
       @include grid(1fr 1fr);
     }
+    // methods
+    .methods {
+      &__heading{
+        flex-direction: row;
+        &__arrows span{
+          padding: 1rem;
+        }
+      }
+      &__list{
+      @include grid(repeat(4, 50%));
+      width: calc(100% + $mobile-inline);
+      transform: translateX(-$mobile-inline/2)  
+    }
+    }
   }
 }
 
@@ -148,6 +217,12 @@
     .details {
       padding-inline: $desktop-inline;
       padding-block: 10rem;
+    }
+    .methods{
+      padding-inline: $desktop-inline;
+      &__list{
+        @include grid(repeat(4, 33%));  
+      }
     }
     .info-form {
       padding-inline: $desktop-inline;
@@ -174,6 +249,9 @@
       padding-inline: $desktop-inline-xl;
     }
     .details {
+      padding-inline: $desktop-inline-xl;
+    }
+    .methods{
       padding-inline: $desktop-inline-xl;
     }
     .info-form {

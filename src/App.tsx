@@ -21,15 +21,17 @@ import { useState } from "react"
 
 function App() {
   // handle languages
-  const locLang = localStorage.getItem("language") || "";
-  const [lang, setlang] = useState(locLang || "english")
   const { i18n } = useTranslation()
-
+  const locLang = localStorage.getItem("language") || i18n.language
+  const [lang, setlang] = useState(locLang)
+  
   const changeLang = (language: string) => {
     setlang(language)
     localStorage.setItem("language", language)
     i18n.changeLanguage(language)
   }
+  
+  
   // Location scroll handle
   const {pathname} = useLocation();
   useEffect(() => {window.scrollTo(0, 0)}, [pathname])

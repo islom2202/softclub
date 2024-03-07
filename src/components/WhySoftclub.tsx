@@ -4,8 +4,8 @@ const WhySoftclub = ({header, list}:{header:string, list:[]}) => {
     <article className="whySoftclub">
       <h4>{header}</h4>
       <ul>
-        {list.map(e =>
-          <li>
+        {list.map((e, index) =>
+          <li key={index}>
             <img src={checkbox} alt="checkbox-icon" />
             {e}
           </li>

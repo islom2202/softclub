@@ -20,7 +20,8 @@ const Home = () => {
   const { t } = useTranslation()
   // advantages t-data
   const advatages: { name: string, icon: string, description: string }[] = t("home.advantages.advantages-blocks", {returnObjects: true})
-  
+  // form footer t-data
+  const formfooter:string[] = t("form.footer", { returnObjects: true })
   return (
     <div className="home">
       {/*Hero*/}
@@ -63,7 +64,7 @@ const Home = () => {
       <Teachers />
       {/*Form*/}
       <Form
-        formfooter={t("form.footer", { returnObjects: true })}
+        formfooter={formfooter}
         background={formBackground}
       />
     </div>

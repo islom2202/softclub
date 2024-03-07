@@ -2,7 +2,7 @@
 
 //---------- light theme
 .app{
-  // header
+  
   .header{
     background-color: $light-hero;
     a,select,button,.material-symbols-outlined{
@@ -13,14 +13,31 @@
       background-color: rgba(186, 186, 186, 0.235);
     }
   }
-  // hero
-  .hero, .loader, .whySoftclub, .certificate, .marks, .details{
-      background-color: $light-hero;
-      .details__box{
-        background-color: $light-blue;
-      }
+  .details, .methods{
+    background-color: $light-blue;
+    .details__box{
+      background-color: $absolute-white;
+    }
+    .methods__heading span{
+      background-color: $absolute-white;
+      color: $dark;
+    }
+    .methods__list li{
+      background-color:$light-methods-card;
+    }
   }
-  // advantages, achievements, reviews, academy-news, comanies
+  .hero, .loader, .whySoftclub, .certificate, .marks{
+    background-color: $light-hero;
+  }
+  .course .companies{
+    background-color: $light-hero;
+    .companies__list-wrapper::after{
+      background: linear-gradient(to left, $light-hero, transparent);
+    }
+    .companies__list-wrapper::before{
+      background: linear-gradient(to right, $light-hero, transparent);
+    }
+  }
   .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
     background-color: $light-blue;
     .form-section__form{
@@ -38,7 +55,7 @@
 
 //---------- dark theme
 .dark{
-  // header
+ 
   .header{
     background-color: $dark-hero;
     &__aside__logo{
@@ -52,17 +69,29 @@
       background-color: $dark-hero;
     }
   }
-  // hero
-  .hero, .loader, .whySoftclub, .marks, .details{
+
+  .hero, .loader, .whySoftclub, .marks, .details, .methods{
     background-color: $dark-hero;
     *{
       color: $light-hero;
     }
-    .details__box{
+    .details__box, .methods__list li{
         background-color: $dark-blue;
     }
+    .methods__heading span{
+      background-color: $dark-blue;
+      color: $absolute-white;
+    }
   }
-  // advantages, achievements, reviews, academy-news, comanies, form, certificate
+  .course .companies{
+    background-color: $dark-hero;
+    .companies__list-wrapper::after{
+      background: linear-gradient(to left, $dark-hero, transparent);
+    }
+    .companies__list-wrapper::before{
+      background: linear-gradient(to right, $dark-hero, transparent);
+    }
+  }
   .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section, .certificate{
     background-color: $dark-hero;
     filter: brightness(1.2);

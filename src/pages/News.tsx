@@ -1,6 +1,9 @@
 import { useTranslation } from "react-i18next"
 import image from "../assets/images/news-hero.png";
-import { Hero } from "../components/Hero"
+// components
+import { Hero } from "../components/Hero";
+import AcademyNews from "../components/AcademyNews";
+//
 const News = () => {
   const {t} = useTranslation();
   return (
@@ -12,6 +15,8 @@ const News = () => {
         image={image}
         contentClass="contentClass"
       />
+      {/*Academy News*/}
+      <AcademyNews />
     </div>
   )
 }

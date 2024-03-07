@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { getImageUrl } from "../utils/image-util";
 import { Link } from "react-router-dom";
-const AcademyNews = ({likes, messagesList}:{likes:number, messagesList:number}) => {
+const AcademyNews = ({likes, messagesList}:{likes?:number, messagesList?:number}) => {
   const {t} = useTranslation();
   const news:{image1:string, name:string, startDate:string, publishDate:string, more:string}[] = t("academy-news.body", {returnObjects: true}) 
   return (

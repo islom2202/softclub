@@ -717,7 +717,16 @@
           "icon": "workspace_premium",
           "content": "Certificate of completion"
         }  
-      ]
+      ],
+      "methods": {
+        "heading": "How the training works",
+        "list": [
+          "Study new topics and complete practical assignments for the course",
+          "Do your homework and submit it for testing",
+          "You communicate with your mentor, consolidate your knowledge and correct mistakes",
+          "At the end of each week you will take an exam"
+        ]
+      } 
     },
     "academy-news": {
       "heading": "Academy news",
