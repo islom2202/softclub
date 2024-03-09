@@ -5,8 +5,6 @@
 
 // mobile
 .about{
-  //----------- hero 
-  @media (prefers-reduced-motion) {
     .hero{
       display: block; // just to avoid grid of other hero components styling  
       &__img-wrapper{
@@ -68,29 +66,77 @@
         }
       }     
     }
-  }
+    .director{
+      padding-inline: $mobile-inline;
+      padding-block: 10rem;
+      &__wrapper{
+        @include flex();
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        figure{
+          @include flex();
+          flex-direction: column;
+          gap: .7rem;
+          img{
+            width: clamp(25rem, 50vw, 34.4rem);
+            aspect-ratio: 344/443;
+          }
+   
+        }
+        figcaption{
+          @include flex(start);
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+      
+    }
 }
 
 
 // tablet
 @include responsive($tablet){
   .about{
-  //----------- hero
-  .hero{
-    height: calc(100vh - map-get($header-height, tablet-desktop));
-    padding-block: 4rem;
-    &__img-wrapper__icon-wrapper span{
-      &::before, &::after{border: 1px solid rgb(128, 128, 128);}
-      &::before{
-        inset: -1.5rem;
-        border-right: 1px solid transparent;        
-      }
-      &::after{
-        inset: -3.5rem;
+    .hero{
+      height: calc(100vh - map-get($header-height, tablet-desktop));
+      padding-block: 4rem;
+      &__img-wrapper__icon-wrapper span{
+        &::before, &::after{border: 1px solid rgb(128, 128, 128);}
+        &::before{
+          inset: -1.5rem;
+          border-right: 1px solid transparent;        
+        }
+        &::after{
+          inset: -3.5rem;
 
-        border-bottom: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+        }
+      }
+    }
+    .director{
+      &__wrapper{
+        flex-direction: row-reverse;
       }
     }
   }
 }
+
+// desktop
+@include responsive($desktop){
+  .about{
+    .director{
+     padding-inline: $desktop-inline;
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .about{
+    .director{
+     padding-inline: $desktop-inline-xl;
+    }
+  }
 }

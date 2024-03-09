@@ -1,0 +1,64 @@
+
+@use "../usuals/breakpoints" as *;
+@use "../usuals/colors" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.contacts{
+  &__marks{
+    @include grid(1fr);
+    padding-inline: $mobile-inline;
+    padding-block: 4rem;
+    padding-bottom: 10rem;
+    gap: 2rem;
+    &__item{
+      @include flex();
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 1px 1px 5px 0px rgba(128, 128, 128, 0.377);
+      transition: .5s;
+      span{
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        color: rgb(49, 81, 144);
+        transition: .5s;
+      }
+      &:hover{
+        box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.224);
+        transform: translateY(-1rem);
+        span{
+          font-variation-settings: 'FILL' 0;
+        }
+      } 
+    }
+  }
+}
+
+// tablet
+@include responsive($tablet){
+  .contacts{
+    &__marks{
+      @include grid(1fr 1fr 1fr);
+    }
+  }
+}
+
+// desktop
+@include responsive($desktop){
+  .contacts{
+    &__marks{
+      padding-inline: $desktop-inline;
+    }
+  }
+}
+
+// desktop xl
+@include responsive($desktop-xl){
+  .contacts{
+    &__marks{
+      padding-inline: $desktop-inline-xl;
+    }
+  }
+}

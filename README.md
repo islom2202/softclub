@@ -7,8 +7,9 @@
 5. <a href="#5">React Hooks I have used</a>
 
 ### <h3 id="1">1. React-router-dom</h3>
-I have learned:
- 1. useLocation(): - App component
+I have used following router's hooks:
+ 1. useNavigate(): - App component
+ 
 
 ### <h3 id="2">2. Vite</h3> 
 For me it seems somewhat like a Gulp <br>

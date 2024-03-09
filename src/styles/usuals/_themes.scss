@@ -13,7 +13,7 @@
       background-color: rgba(186, 186, 186, 0.235);
     }
   }
-  .details, .methods{
+  .details, .methods, .news-details, .comments{
     background-color: $light-blue;
     .details__box{
       background-color: $absolute-white;
@@ -25,11 +25,17 @@
     .methods__list li{
       background-color:$light-methods-card;
     }
+    .news-details__body{
+      background-color: $absolute-white;
+    }
   }
-  .hero, .loader, .whySoftclub, .certificate, .marks{
+  .hero, .loader, .whySoftclub, .certificate, .marks, .contacts__marks, .about .achievements{
     background-color: $light-hero;
+    .contacts__marks__item{
+      background-color: $light-blue;
+    }
   }
-  .course .companies{
+  .course .companies {
     background-color: $light-hero;
     .companies__list-wrapper::after{
       background: linear-gradient(to left, $light-hero, transparent);
@@ -38,7 +44,7 @@
       background: linear-gradient(to right, $light-hero, transparent);
     }
   }
-  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section{
+  .advantages, .achievements, .reviews, .academy-news, .companies, .teachers, .form-section, .about .director{
     background-color: $light-blue;
     .form-section__form{
       background-color: $light-hero;
@@ -49,6 +55,12 @@
     .companies__list-wrapper::before{
       background: linear-gradient(to right, $light-blue, transparent);
     }
+    .director__wrapper{
+      background-color: $absolute-white;
+      h4{
+        color: $dark-blue;
+      }
+    } 
   }
 }
 
@@ -70,20 +82,32 @@
     }
   }
 
-  .hero, .loader, .whySoftclub, .marks, .details, .methods{
+  .hero, .loader, .whySoftclub, .marks, .details, .methods, .news-details, .contacts__marks, .comments, .about .achievements, .about .director{
     background-color: $dark-hero;
     *{
       color: $light-hero;
     }
-    .details__box, .methods__list li{
+    input, textarea{
+      background-color: $dark-blue;
+      &::placeholder{
+        color: $light-gray;
+      }
+    }
+    .details__box, .methods__list li, .news-details__body, .contacts__marks__item{
         background-color: $dark-blue;
     }
     .methods__heading span{
       background-color: $dark-blue;
       color: $absolute-white;
     }
+    .director__wrapper{
+      background-color: $dark-blue;
+      h4, *{
+        color: $light-blue;
+      }
+    } 
   }
-  .course .companies{
+  .course .companies, .about .companies{
     background-color: $dark-hero;
     .companies__list-wrapper::after{
       background: linear-gradient(to left, $dark-hero, transparent);
@@ -121,6 +145,6 @@
           }
         }
       }
-    }
+    }  
   }
 }

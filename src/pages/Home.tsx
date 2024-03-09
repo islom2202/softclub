@@ -14,8 +14,8 @@ import { Companies } from "../components/Companies.tsx";
 import Teachers from "../components/Teachers.tsx";
 import Form from "../components/Form.tsx";
 import AllCourses from "../components/AllCourses.tsx";
-// typescript objects - states
-import { comments } from "../newsComments.ts";
+// // typescript objects - states
+// import { comments } from "../newsComments.ts";
 const Home = () => {
   const { t } = useTranslation()
   // advantages t-data
@@ -54,10 +54,7 @@ const Home = () => {
       {/*All courses*/}
       <AllCourses button={true} description={false}/>
       {/*Academy news*/}
-      <AcademyNews
-        likes={comments.likes}
-        messagesList={comments.messagesList.length}
-      />
+      <AcademyNews/>
       {/*Companies*/}
       <Companies />
       {/*Teachers*/}

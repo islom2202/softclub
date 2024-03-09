@@ -102,13 +102,52 @@
     "about":{
       "hero":{
         "name": "Softclub Academy"
+      },
+      "director": {
+        "image": "nurullo.png",
+        "fullname": "Sulaymonov Nurullo",
+        "status": "Founder and CEO of Softclub",
+        "cooporates": "We cooperate with top companies in Tajikistan",
+        "info": [
+          {
+            "content": "We have been working for several years to create useful and accessible programming courses. We are ready to share our experience with everyone who wants to try their hand at IT!"
+          },
+          {
+            "type": "emphasis",
+            "content": "“At SoftClub we have assembled a team of qualified teachers with many years of experience who will help you understand all programming issues”"
+          },
+          {
+            "content": "It is very important for us that there is enough practice while studying the course, so all teachers conduct their own projects, which allows us to teach you not only the theoretical foundations, but also analyze real cases in practice."
+          },
+          {
+            "type": "emphasis",
+            "content": "“We support our students until they find their job.”"
+          }
+        ]
       }
     },
     "contacts":{
       "hero": {
         "route-name": "Home > Contacts",
         "name": "Contacts"
-      }
+      },
+      "list": [
+        {
+          "icon": "phone_enabled",
+          "name": "Phone",
+          "info": "(+992) 558 700 900"
+        },
+        {
+          "icon": "location_on",
+          "name": "Academy address",
+          "info": "Rahimi street 12, landmark: Trade Union"
+        },
+        {
+          "icon": "mail",
+          "name": "E-mail",
+          "info": "info@softclub.tj"
+        }
+      ]
     },
     "all-courses":{
       "heading": "All Courses",
@@ -749,7 +788,7 @@
             "📌The best educational materials: our books and presentations are the products of our teachers and have no equal in Tajikistan.",
             "📌Our hot classes are always at your disposal with all conditions. Come at a time convenient for you, use the free Internet and do your practical work or homework with the help of teachers."
           ],
-          "button": "Sign up"
+          "button": "Sign Up"
         }
       ],
       "viewAll": "View all",
@@ -757,7 +796,7 @@
         "heading": "Add commentary",
         "name": "Name *",
         "namePlaceholder": "Type your name",
-        "button": "Send →",
+        "button": "Send",
         "commentaryPlaceholder": "Commentary"
       }
     },

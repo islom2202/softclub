@@ -1,0 +1,60 @@
+@use "../usuals/colors" as *;
+@use "../usuals/breakpoints" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.news-details{
+  padding-inline: $mobile-inline;
+  padding-block: 7rem;
+  &__heading{
+    @include flex(center, space-between);
+    padding-block: 1rem;
+    font-weight: 500;
+    p{
+      @include flex();
+      gap: 1rem;
+    }
+  };
+  &__body{
+    border-radius: 1rem;
+    padding: 1rem;
+    @include flex(start);
+    flex-direction: column;
+    gap: 2rem;
+    img{
+      width: 100%;
+      border-radius: 1rem;
+    }
+    ul{
+      @include grid();
+      gap: 2rem;
+    }
+  };
+}
+
+//tablet
+@include responsive($tablet){
+  .news-details__body{
+    padding: 2rem;
+  }
+}
+
+// desktop
+@include  responsive($desktop){
+   .news-details{
+    padding-inline: $desktop-inline;
+    &__body{
+      padding: 3rem;
+    }
+   }
+}
+
+// desktop xl
+@include  responsive($desktop-xl){
+   .news-details{
+    padding-inline: $desktop-inline-xl;
+    &__body{
+      padding: 5rem;
+    }
+   }
+}

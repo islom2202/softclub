@@ -1,0 +1,72 @@
+@use "../usuals//breakpoints" as *;
+@use "../usuals/mixins" as *;
+
+// mobile
+.comments{
+  padding-inline: $mobile-inline; 
+  padding-block: 5rem;
+  @include flex(start);
+  gap: 2rem;
+  flex-direction: column;
+  &__nameInputPlaceholder{
+    // @include flex(center, space-between);
+    // flex-direction: column;
+    // width:clamp(20rem, 100%, 50rem);
+    display: contents;
+    button{
+      max-height: 4.5rem;
+      max-width: 26rem;
+      order: 3;
+    }
+    input{
+      height: 4.5rem;
+      border-radius: 50rem;
+      padding-inline: 3rem;
+      order: 1;
+      width:clamp(20rem, 100%, 50rem);
+    }
+  }
+  &__message{
+    order: 2;
+    width:clamp(20rem, 100%, 50rem);
+    height: 12rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+  }
+  &__messages{
+    order: 4;
+    @include flex(start);
+    flex-direction: column;
+    gap: 2rem;
+    li{
+      @include flex();
+      gap: 1.5rem;
+    }
+  }
+}
+
+// tablet
+@include responsive($tablet){
+  .comments{
+    &__nameInputPlaceholder{
+      @include flex(center, space-between);
+      flex-direction: row;
+      width:clamp(20rem, 100%, 50rem);
+      input{
+        width: 60%;
+      }
+    }
+  }
+}
+// desktop
+@include responsive($desktop){
+  .comments{
+    padding-inline: $desktop-inline;
+  }
+}
+// desktop xl
+@include responsive($desktop-xl){
+  .comments{
+    padding-inline: $desktop-inline-xl;
+  }
+}
