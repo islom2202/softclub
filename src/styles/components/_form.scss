@@ -44,6 +44,7 @@
               left: 1.8rem;
               transform: translateY(-54.5%);
               z-index: 2;
+              max-width: fit-content;
             }
             .input-tel{
               padding-left: 7rem;
@@ -53,7 +54,6 @@
               inset: 0;
               border-radius: 10rem;
               padding-inline: inherit;
-              z-index: 0;
             }
         }
         .error .invalid{
