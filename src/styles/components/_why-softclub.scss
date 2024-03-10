@@ -2,10 +2,10 @@
 @use "../usuals/breakpoints" as *;
 @use "../usuals/mixins" as *;
 
-// mobile
+// mobile x
 .whySoftclub{
   padding-inline: $mobile-inline;
-  padding-block: clamp(4rem, 42vw, 30rem);
+  padding-block: clamp(1rem, 20vw, 30rem);
   h4{
     text-align: center;
     margin-bottom: 3rem;
@@ -17,6 +17,12 @@
       @include flex();
       gap: 2rem;
     }
+  }
+}
+// mobile
+@include responsive($mobile){
+  .whySoftclub{
+    padding-block: clamp(1rem, 50vw, 30rem);
   }
 }
 // tablet
