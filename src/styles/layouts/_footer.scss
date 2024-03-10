@@ -38,6 +38,9 @@
   &__information ul{
       @include grid();
       gap: 1rem;
+      li{
+        cursor: pointer;
+      }
   }
   &__contact ul {
     @include grid();

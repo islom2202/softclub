@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 export const Hero = ({
   routename,
   name,
@@ -17,6 +18,7 @@ export const Hero = ({
   contentClass?: string
   map?: any
 }) => {
+  const navigate = useNavigate();
   return (
     <article className="hero">
       <div className={`hero__content hero__${contentClass}`}>
@@ -24,7 +26,7 @@ export const Hero = ({
         <h3>{name}</h3>
         <p className="hero__content__description">{description}</p>
         {button && (
-          <button className="button button--filled">
+          <button className="button button--filled" onClick={()=> navigate("/contacts")}>
             <span className="material-symbols-rounded">arrow_forward</span>
             <span>{button}</span>
             <span className="material-symbols-rounded">arrow_forward</span>

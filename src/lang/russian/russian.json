@@ -879,7 +879,24 @@
     },
     "information": {
       "heading": "Информация",
-      "list": ["Главная", "Курсы", "Новости", "О нас"]
+      "list": [
+        {
+          "route": "/",
+          "name": "Главная"
+        },
+        {
+          "route": "/courses",
+          "name": "Курсы"
+        },
+        {
+          "route": "/news",
+          "name": "Новости"
+        },
+        {
+          "route": "/about",
+          "name": "О нас"
+        }
+      ]
     },
     "contact": {
       "heading": "Контакты",

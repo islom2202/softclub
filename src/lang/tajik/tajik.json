@@ -879,7 +879,24 @@
     },
     "information": {
       "heading": "Маълумот",
-      "list": ["Асосӣ", "Курсҳо", "Хабарҳо", "Дар бораи мо"]
+      "list": [
+        {
+          "route": "/",
+          "name": "Асосӣ"
+        },
+        {
+          "route": "/courses",
+          "name": "Курсҳо"
+        },
+        {
+          "route": "/news",
+          "name": "Хабарҳо"
+        },
+        {
+          "route": "/about",
+          "name": "Дар бораи мо"
+        } 
+      ]
     },
     "contact": {
       "heading": "Контакты",

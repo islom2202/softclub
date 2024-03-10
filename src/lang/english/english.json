@@ -890,10 +890,22 @@
       "information":{
         "heading": "Information",
         "list": [
-          "Home",
-          "Courses",
-          "News",
-          "About us"
+          {
+            "route": "/",
+            "name": "Home"
+          },
+          {
+            "route": "/courses",
+            "name": "Courses"
+          },
+          {
+            "route": "/news",
+            "name": "News"
+          },
+          {
+            "route": "/about",
+            "name": "About us"
+          }  
         ]
       },
       "contact": {
