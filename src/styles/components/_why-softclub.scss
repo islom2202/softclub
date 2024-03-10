@@ -5,7 +5,7 @@
 // mobile
 .whySoftclub{
   padding-inline: $mobile-inline;
-  padding-block: 4rem;
+  padding-block: clamp(4rem, 42vw, 30rem);
   h4{
     text-align: center;
     margin-bottom: 3rem;
@@ -22,6 +22,7 @@
 // tablet
 @include responsive($tablet){
   .whySoftclub {
+    padding-block: clamp(4rem, 45vw, 20rem);
     padding-bottom: 8rem;
     ul{
       @include grid(1fr 1fr);
