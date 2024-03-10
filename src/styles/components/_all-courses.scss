@@ -71,6 +71,9 @@
             gap: 1rem;
             font-weight: 600;
           }
+          &__start{
+            min-width: fit-content;
+          }
         }
       }
     }
