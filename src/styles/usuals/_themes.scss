@@ -1,10 +1,9 @@
 @use "../usuals/colors" as *;
-
+@use "../usuals/measures" as *;
 //---------- light theme
 .app{
   
   .header{
-    background-color: $light-hero;
     a,select,button,.material-symbols-outlined{
       color: $gray;
       background-color: transparent;

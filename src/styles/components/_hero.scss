@@ -5,10 +5,12 @@
 // mobile
 .hero {
   @include grid();
+  gap: 5rem;
   justify-items: center;
   align-items: center;
   padding-inline: $mobile-inline;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  padding-top: map-get($header-height, mobile);
   max-height: map-get($hero-height, mobile);
   &__content {
     order: 1;
@@ -74,6 +76,7 @@
   .hero {
     padding-inline: $desktop-inline;
     height: map-get($hero-height, desktop);
+    padding-top: map-get($header-height, desktop);
     &__contentClass {
       h3 {
         padding-right: 50%;

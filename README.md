@@ -1,11 +1,11 @@
-*- please note that my clone is not 100% exact as original website, for reusability and simplicity purposes.*
+*- please note that my clone is not 100% exact as original website, for reusability and simplicity purposes. Header scrolling animation also might not work as I am using new css features, that are experimental for now*
 ## In this project I expect to use:
 1. <a href="#1">React-router-dom</a> - for client-side routing and SPA
 2. <a href="#2">Vite</a> - React new generation bundler
 3. <a href="#3">i18next</a> - for localization
 4. <a href="#4">Google materials</a> - for icons (check CDN links in html root file)
 5. <a href="#5">React Hooks I have used</a>
-
+6. <a href="#6">Issues in production of this application</a>
 ### <h3 id="1">1. React-router-dom</h3>
 I have used following router's hooks:
  1. useNavigate(): - App component
@@ -102,3 +102,5 @@ This is what I have understand for now:
       2. to run a function based on dependecy change in App.tsx
 3. useLocation - is like **window.location** that we have in vanilla (for now I do not see any difference, although it is recommended to use useLocation)
 4. useRef - used to select rendered html elements
+### <h3 id="6">Issues in production of this application</3>:
+1. Header box-shadow animation (scroll) is not working , therefore I have commented that part of my code
