@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+// icons
+import menu from "../assets/icons/menu.svg"
 // i18next hook
 import { useTranslation } from "react-i18next";
-// header icons
 export const Header = ({logo, children}:{logo:string, children:any}) => {
   //states
-  const [burger, setburger] = useState("menu")
   const [hide, sethide] = useState("header--hide")
   // handle menu
   const handleMenu = () => {
-    setburger(burger == "menu" ? "cancel" : "menu")
-    sethide(burger == "cancel" ? "header--hide" : "")
+    sethide(hide == "header--hide" ? "" : "header--hide")
   }
-
   // handle theme
   const locTheme = localStorage.getItem("theme")
   const [theme, settheme] = useState(locTheme == "dark" ? false : true)
@@ -41,12 +39,18 @@ export const Header = ({logo, children}:{logo:string, children:any}) => {
           className="header__aside__logo"
           draggable="false"
         />
-        <span
+        {/* <span
           className="material-symbols-outlined header__aside__menu"
           onClick={() => handleMenu()}
         >
           {burger == "menu" ? "menu" : "close"}
-        </span>
+        </span> */}
+        <img
+          src={menu}
+          alt="burger-icon"
+          className="header__aside__menu"
+          onClick={() => handleMenu()}
+        />
       </aside>
       <section className="header__right-desktop">
         <nav className={`${hide} header__nav`}>
